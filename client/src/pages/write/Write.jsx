@@ -10,7 +10,7 @@ const Write = (props) => {
   const [write, { error, data }] = useMutation(ADD_POST);
 
   const handleChange = (event) => {
-    const { }
+    const { name, value} =  event.target;
 
     setFormState({
       ...formState,

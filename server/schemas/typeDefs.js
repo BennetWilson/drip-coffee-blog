@@ -15,6 +15,7 @@ const typeDefs = gql`
         title: String
         desc: String
         photo: String
+        comments: [Comment]
     }
 
     type Comment {
@@ -44,6 +45,7 @@ const typeDefs = gql`
         getUsers: [User]
         posts: [Post]
         getUser(username: String): User
+        singlePost(postId: ID!): Post
         me: User
     }
 
@@ -52,7 +54,7 @@ const typeDefs = gql`
         login(email: String!, password: String!): Auth
         addPost(title: String, desc: String, photo: String): Post
         addComment(postId: ID!, commentText: String!): Post
-        removePost(postId: ID!); Post
+        removePost(postId: ID!): Post
     }
 `;
 

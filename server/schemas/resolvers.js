@@ -1,6 +1,5 @@
 const { AuthenticationError } = require("apollo-server-express");
 const { User, Post } = require("../models");
-
 const { signToken } = require("../utils/auth");
 
 const resolvers = {
@@ -16,6 +15,9 @@ const resolvers = {
     posts: async () => {
       console.log("get post");
       return Post.find();
+    },
+    singlePost: async (parent, { postId }) => {
+      return Post.findOne({ _id: postId });
     },
 
     me: async (parent, args, context) => {
@@ -69,20 +71,6 @@ const resolvers = {
       }
 
       throw new AuthenticationError("Incorrect credentials");
-      //   let catArr = [];
-
-      //   for (const category of categories) {
-      //     catArr.push(category);
-      //   }
-
-      //   const post = await Post.create({
-      //     title,
-      //     desc,
-      //     photo,
-      //     $addToSet: { categories: catArr },
-
-      //   });
-      //   return post;
     },
 
     // TODO check addComment and make sure its correct and relating to typeDefs
@@ -109,7 +97,7 @@ const resolvers = {
       if (context.user) {
         const post = await Post.findOneAndDelete({
           _id: postId,
-          thoughtAuthor: context.user.username,
+          username: context.user.username,
         });
 
         await User.findOneAndUpdate(

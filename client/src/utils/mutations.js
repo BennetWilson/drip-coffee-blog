@@ -36,4 +36,30 @@ mutation addPost($title: String, $desc:String, $photo:String) {
   }
 }
 
-`
+`;
+
+export const REMOVE_POST = gql`
+mutation removePost($postId: ID!) {
+  removePost(postId: $postId) {
+    _id
+    
+  }
+}
+`;
+
+export const ADD_COMMENT = gql`
+mutation addComment($postId: ID!, $commentText: String!) {
+  addComment(postId: $postId, commentText: $commentText) {
+    _id
+    username
+    title
+    desc
+    photo
+    comments {
+      _id
+      commentText
+      createdAt
+    }
+  }
+}
+`;
