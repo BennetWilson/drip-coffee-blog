@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const dateFormat =  require('../utils/dateFormat')
 
 
 const categorySchema = new mongoose.Schema(
@@ -27,7 +28,30 @@ const postSchema = new mongoose.Schema(
       type: String,
      
     },
-    // categories: [categorySchema]
+    comments: [
+      {
+        commentText: {
+          type: String,
+          required: true,
+          minlength: 1,
+          maxlength: 280,
+        },
+        commentAuthor: {
+          type: String,
+          required: true,
+        },
+        createdAt: {
+          type: Date,
+          default: Date.now,
+          get: (timestamp) => dateFormat(timestamp),
+        },
+      },
+    ],
+    categories: [{
+      category: {
+        type: String
+      },
+    }]
   },
 );
 
