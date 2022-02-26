@@ -16,3 +16,19 @@ export const QUERY_ME = gql`
     }
   }
 `;
+
+export const QUERY_GETUSER = gql`
+query getUser {
+  getUser(username:$username){
+    _id
+    username
+    email
+    posts{
+      _id
+      title
+      desc
+      photo
+    }
+  }
+}
+`;

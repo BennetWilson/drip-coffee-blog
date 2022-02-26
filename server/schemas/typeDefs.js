@@ -15,8 +15,14 @@ const typeDefs = gql`
         title: String
         desc: String
         photo: String
-       
     }
+
+    type Comment {
+        _id: ID
+        commentText: String
+        commentAuthor: String
+        createdAt: String
+      }
 
     type Category {
         name: String!
@@ -45,6 +51,8 @@ const typeDefs = gql`
         addUser(username: String!, password: String!, email: String!): Auth
         login(email: String!, password: String!): Auth
         addPost(title: String, desc: String, photo: String): Post
+        addComment(postId: ID!, commentText: String!): Post
+        removePost(postId: ID!); Post
     }
 `;
 
