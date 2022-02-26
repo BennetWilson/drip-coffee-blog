@@ -1,0 +1,42 @@
+.header {
+    margin-top: 60px;
+}
+
+.headerTitles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* font-family: ; */
+    color: #444;
+    margin-bottom: 50px;
+}
+
+.headerTitleSm {
+    font-family: 'The Girl Next Door', cursive;
+    font-weight: 600;
+    position: static;
+    padding-top: 1px;
+    top: 18%;
+    font-size: 25px;
+    color: black;
+}
+
+.headerTitleLg {
+    font-family: 'Fredoka One', cursive;
+    position: center;
+    top: 14%;
+    font-size: 100px;
+    color: black;
+    padding-bottom: 5px;
+}
+
+.headerTitleLg i {
+    color: #ab7343;
+}
+
+.headerImg {
+    width: 100%;
+    height: 450px;
+    margin-top: 20px;
+    object-fit: cover;
+}
