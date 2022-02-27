@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import "./write.css";
 import { Link } from "react-router-dom";
-import { useMutation } from '@apollo/client';
-import { ADD_POST } from '../../utils/mutations';
-import Auth from '../../utils/auth';
+import { useMutation } from "@apollo/client";
+import { ADD_POST } from "../../utils/mutations";
+import Auth from "../../utils/auth";
 
 const Write = (props) => {
-  const [formState, setFormState] = useState({ title: '', desc: '' });
-  const [write, { error, data }] = useMutation(ADD_POST);
+  const [formState, setFormState] = useState({ title: "", desc: "", photo: "" });
+  const [write] = useMutation(ADD_POST);
 
   const handleChange = (event) => {
-    const { name, value} =  event.target;
+    const { name, value } = event.target;
 
     setFormState({
       ...formState,
@@ -25,33 +25,38 @@ const Write = (props) => {
       const { data } = await write({
         variables: { ...formState },
       });
+      // console.log(data, "this is data consolelog")
+      // Auth.loggedIn(data.loggedIn.token);
 
       // auth?
+
     } catch (e) {
       console.error(e);
     }
 
     setFormState({
-      title: '',
-      desc: '',
+      title: "",
+      desc: "",
+      photo:""
     });
   };
-    
 
   return (
     <div className="write">
       <img className="writeImg" src="https://via.placeholder.com/250" alt="" />
-      <form className="writeForm">
+      <form className="writeForm" onSubmit={handleFormSubmit}>
         <div className="writeFormGroup">
           <label htmlFor="fileInput">
             <i className="writeIcon fa-solid fa-plus"></i>
           </label>
-          <input type="file" id="fileInput" style={{ display: "none" }} />
+          <input type="file" id="fileInput" style={{ display: "none" }} onChange={handleChange} name='photo'/>
           <input
             type="text"
             placeholder="Title"
             className="writeInput"
             autoFocus={true}
+            onChange={handleChange}
+            name='title'
           />
         </div>
         <div className="writeFormGroup">
@@ -59,18 +64,17 @@ const Write = (props) => {
             placeholder="Tell your story..."
             type="text"
             className="writeInput writeText"
+            onChange={handleChange}
+            name='desc'
           ></textarea>
+          <button
+            className="writeSubmit"
+            style={{ cursor: "pointer" }}
+            type="submit"
+          >
+            Publish
+          </button>
         </div>
-
-        <form onSubmit={handleFormSubmit} className="writeForm">
-           <label>Title</label>
-           <input type="text" name='title' value={formState.title} onChange={handleChange} className="writeInput" placeholder="Enter your title..."/>
-           <label>Thoughts</label>
-           <input type="text" name="desc" value={formState.desc} onChange={handleChange} className="writeInput" placeholder="Tell your story..."/>
-           <button type="submit" className="writeSubmit">Publish</button>
-       </form>
-
-        
       </form>
     </div>
   );

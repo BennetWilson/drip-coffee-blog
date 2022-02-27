@@ -1,5 +1,6 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { QUERY_GET_USER } from '../../utils/queries';
+import {useQuery} from '@apollo/client'
 import './singlepost.css'
 
 export default function SinglePost () {
@@ -14,7 +15,7 @@ export default function SinglePost () {
         <div className='singlePost'>
             <div className="singlePostWrapper">
                 <img src="https://via.placeholder.com/250" alt="" className="singlePostImg" />
-                <h1 className="singlePostTitle">You're right? Why pay $200 for 20 grams of coffee.
+                <h1 className="singlePostTitle">This is what you see after you click on one of the posts on the main page
                 <div className="singlePostEdit">
                     <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
                     <i className="singlePostIcon fa-solid fa-trash"></i>
@@ -24,7 +25,7 @@ export default function SinglePost () {
                     <span className='singlePostAuthor'>Author: <b>Ben</b></span>
                     <span className='singlePostDate'>1 hour ago </span>
                 </div>
-                <p className='singlePostDescription'>Because you're a champion. If you're one of the people who doesn't have the stomach to spend two hundred hard earned dollars on ingedients to make a cup of bean juice, you don't belong here. Get out of my sight.</p>
+                <p className='singlePostDescription'>This would be that single description called using QUERY_SINGLE_POST.</p>
             </div>
         </div>
     );
