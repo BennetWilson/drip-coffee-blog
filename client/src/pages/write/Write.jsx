@@ -7,6 +7,7 @@ import Auth from "../../utils/auth";
 
 const Write = (props) => {
   const [formState, setFormState] = useState({ title: "", desc: "", photo: "" });
+  const [imageSrc, setImageSrc] = useState('Assets/coffee-images/coffee-cup.png')
   const [write] = useMutation(ADD_POST);
 
   const handleChange = (event) => {
@@ -16,6 +17,17 @@ const Write = (props) => {
       ...formState,
       [name]: value,
     });
+  };
+  const handleDropdownChange = (event) => {
+    const { name, value } = event.target;
+
+    setFormState({
+      ...formState,
+      [name]: value,
+    });
+    setImageSrc(
+      value
+    )
   };
 
   const handleFormSubmit = async (event) => {
@@ -43,7 +55,8 @@ const Write = (props) => {
 
   return (
     <div className="write">
-      <img className="writeImg" src="https://via.placeholder.com/250" alt="" />
+      {/* add coffee select images */}
+      <img className="writeImg" src={`../../${imageSrc}`} alt="" />
       <form className="writeForm" onSubmit={handleFormSubmit}>
         <div className="writeFormGroup">
           <label htmlFor="fileInput">
