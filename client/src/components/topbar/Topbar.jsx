@@ -16,11 +16,6 @@ export default function TopBar() {
             </a>
           </li>
           <li className="topListItem">
-            <a className="link" href="/about">
-              ABOUT
-            </a>
-          </li>
-          <li className="topListItem">
             <a className="link" href="/contact">
               CONTACT
             </a>
@@ -28,6 +23,18 @@ export default function TopBar() {
           <li className="topListItem">
             <a className="link" href="/write">
               WRITE
+            </a>
+          </li>
+        </ul>
+        <ul className="topList brList">
+          <li className="topListItem">
+            <a className="link" href="/brew">
+              BREW
+            </a>
+          </li>
+          <li className="topListItem">
+            <a className="link" href="/recipe">
+              RECIPES
             </a>
           </li>
         </ul>
