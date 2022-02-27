@@ -1,17 +1,18 @@
-import React,{useState} from 'react';
+import React from 'react';
 import { QUERY_SINGLE_POST } from '../../utils/queries';
-import {useQuery} from '@apollo/client'
-import './singlepost.css'
+import {useQuery} from '@apollo/client';
+import './singlepost.css';
 
 export default function SinglePost () {
-    const {loading, data} = useQuery(QUERY_SINGLE_POST)
-       
-       console.log(data)
-   
-    return(
-        // <>
-        // {loading?"still loading" : posts.map(post => {
-        //     return (
+    const { loading, data } = useQuery(QUERY_SINGLE_POST);
+
+    const postList = data?.posts || [];
+
+    // const [formData, setFormData] = useState({
+            
+    //     })
+        return(
+        
         
         <div className='singlePost'>
             <div className="singlePostWrapper">
@@ -30,14 +31,9 @@ export default function SinglePost () {
             </div>
         </div>
         
-            
-//         )
-//         }
-//         )
-         
-//     }
-// </>
-    );
+    )
+    
 }
+
 
 
