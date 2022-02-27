@@ -1,10 +1,9 @@
-import React,{useState} from 'react';
-import { QUERY_GET_USER } from '../../utils/queries';
-import {useQuery} from '@apollo/client'
+import React from 'react';
+import { QUERY_SINGLE_POST } from '../../utils/queries';
 import './singlepost.css'
 
 export default function SinglePost () {
-    const { loading, data } = useQuery(QUERY_GET_USER);
+    const { loading, data } = useQuery(QUERY_SINGLE_POST);
 
     const postList = data?.posts || [];
 
