@@ -8,8 +8,9 @@ import DripCover from '../../Assets/Drip-Cover.jpeg';
 export default function Recipe() {
     
     return (
+        <>
+        <Header />
         <div>
-            <Header />
             <div className='recipe'>
                 <div className='recipeImg'>
                     <img src={DripCover} alt="" className="recipeImg" />
@@ -38,4 +39,7 @@ export default function Recipe() {
                 </div>
             </div>
         </div>
+        </>
     );
+
+}

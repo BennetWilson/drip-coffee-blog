@@ -8,8 +8,9 @@ import DripCover from '../../Assets/Drip-Cover.jpeg';
 export default function Brew() {
     
     return (
+        <>
+        <Header />
         <div>
-            <Header />
             <div className='brew'>
                 <div className='brewImg'>
                     <img src={DripCover} alt="" className="brewImg" />
@@ -20,5 +21,6 @@ export default function Brew() {
                 </div>
             </div>
         </div>
+        </>
     );
 }

@@ -6,6 +6,8 @@ import Contact from "./pages/contact/Contact";
 import Settings from "./pages/settings/Settings";
 import Login from "./pages/login/Login";
 import Home from "./pages/home/Home";
+import Brew from "./pages/brew/Brew";
+import Recipe from "./pages/recipe/Recipe";
 import Register from "./pages/register/Register";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import {
@@ -58,6 +60,12 @@ function App() {
         </Route>
         <Route path="/contact"  > 
         <Contact />
+        </Route>
+        <Route path="/brew" >
+        <Brew />
+        </Route>
+        <Route path="/recipes" >
+        <Recipe />
         </Route>
         <Route path="/settings"  >
         <Settings />
