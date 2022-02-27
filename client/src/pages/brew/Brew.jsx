@@ -9,7 +9,7 @@ import DripCover from "../../Assets/Drip-Cover.jpeg";
 export default function Brew() {
   const [methods] = useState([
     {
-      image: "",
+      image: "coffee-cup",
       methodName: "Cowboy Coffee",
       methodType: "Boil",
       equipment: "pot, open flame",
@@ -30,10 +30,10 @@ export default function Brew() {
       <div className="">
         <div className="brew">
           {methods.map((example, i) => (
-            <Card key={example.methodName} id={example.id} className="WorkCard">
+            <Card key={example.methodName} className="WorkCard">
               <Col className="img-col">
                 <img
-                  src={require(`../../Assets/portfolio/${example.image}.png`)}
+                  src={require(`../../Assets/coffee-images/${example.image}.png`)}
                   alt="Img of portfolio project"
                   className="project-image"
                 />
@@ -41,6 +41,10 @@ export default function Brew() {
               <Card.Body>
                 <Col>
                   <Card.Text className="description">
+                    {example.methodType}
+                    <br></br>
+                    {example.equipment}
+                    <br></br>
                     {example.description}
                     <br></br>
                     {example.steps}
