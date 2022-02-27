@@ -5,13 +5,13 @@
         "equipment": "pot, open flame",
         "description": "Unlike the name suggests, the cowboy coffee brew-method is used all over the world. It is one of the easiest methods as it doesn't require any special equipment outside of what most people already have in their kitchen. This method invovles boiling water, adding coffee grounds to the hot water, and pouring it into your mug of choice.",
         "steps": [
-                    "1. Boil the desired amount of water in the pot", 
-                    "2. When water reaches a boil take off heat for about 30 seconds or until the water reaches 200F", 
-                    "3. Add ~2 tbsps of ground coffee per 8 ounces of water and stir", 
-                    "4. Let stand for 2 mins and stir again",
-                    "5. Let stand for another 2 mins then pour 1/2 cup of cold water onto floating grounds to help them sink",
-                    "6. Pour into cup (if you're worried about grounds pour slowly)"
-        ],
+                "1. Boil the desired amount of water in the pot", 
+                "2. When water reaches a boil take off heat for about 30 seconds or until the water reaches 200F", 
+                "3. Add ~2 tbsps of ground coffee per 8 ounces of water and stir", 
+                "4. Let stand for 2 mins and stir again",
+                "5. Let stand for another 2 mins then pour 1/2 cup of cold water onto floating grounds to help them sink",
+                "6. Pour into cup (if you're worried about grounds pour slowly)"
+            ],
         "prosCons": [
             {
                 "pros": [
@@ -28,13 +28,22 @@
                 ]
             }
         ],
-        "results": "simple and full bodied cup of joe"
+        "results": "simple and full bodied cup of joe",
+        "recipes": [
+            {
+                "id": "1",
+                ""
+            },
+            {
+
+            }
+        ]
         
     },
     {
         "methodName": "Turkish Coffee",
         "methodType": "Boil",
-        "equipment": "Cezve(wide-bottom pot traditionally used for turkish coffee, turkish coffee cups(optional), sand, granulated sugar",
+        "equipment": ["Cezve(wide-bottom pot traditionally used for turkish coffee", "turkish coffee cups(optional)", "sand", "granulated sugar"],
         "description": "While it may seem that the beans used for this brew method are from Turkey, it is actually referring to the grind size. Turkish coffee needs to be ground so fine that it looks like a powder. Traditionally, the powdered coffee is combined with water and boiled repeatedly while running the pot through hot sand. It can also be done without sand by just heating it over the stove.",
         "steps": [
                     "1. Add water to cezve", 
@@ -68,7 +77,7 @@
     {
         "methodName": "French Press",
         "methodType": "Steep",
-        "equipment": "French Press",
+        "equipment": ["French Press"],
         "description": "",
         "steps": [
                     "1. Boil water and allow to cool to around 200F", 
@@ -100,7 +109,7 @@
     {
         "methodName": "Cold Brew",
         "methodType": "Steep",
-        "equipment": "large container, fridge",
+        "equipment": ["large container", "fridge"],
         "description": "This is another easy brew method that requires little time and effort to produce a great tasting cup of coffee. Essentially put the coffee and water in the fridge and pour your coffee the next morning.",
         "steps": [
                     "1. Combine course ground coffee with desired amount of water inside container", 
@@ -131,7 +140,7 @@
     {
         "methodName": "Coffee Bags",
         "methodType": "Steep",
-        "equipment": "Coffee bag",
+        "equipment": ["Coffee bag"],
         "description": "It's like brewing a single serving of tea but it's coffee",
         "steps": [
                     "1. Fill cup with just boiled water", 
@@ -162,7 +171,7 @@
     {
         "methodName": "Instant Coffee",
         "methodType": "Steep",
-        "equipment": "None",
+        "equipment": ["None"],
         "description": "This is an easy brew method ",
         "steps": [
                     "1. Bring water to a boil", 
@@ -173,16 +182,14 @@
         "prosCons": [
             {
                 "pros": [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "easy",
+                    "no mess"
                 ]
             },
             {
                 "cons": [
-                    "",
-                    ""
+                    "waste from the bags getting thrown out",
+                    "not fresh"
                 ]
             }
         ],
@@ -192,8 +199,8 @@
     {
         "methodName": "Siphon Brewers",
         "methodType": "Steep",
-        "equipment": "",
-        "description": "",
+        "equipment": ["Spiphon brewer", "heat source"],
+        "description": "This is a little more complicated than some of the other brew methods. It involves using heat to transfer water to another vessel and re-transfer the water through the coffee grounds. The components can be as intricate or simple as the brewer desires and is, in our opinion, the most entertaining way to brew coffee.",
         "steps": [
                     "1. Make sure your filter is in the correct position in the hopper (top part of siphon)", 
                     "2. Add recently boiled water to the bottom bulb of the siphon", 
@@ -203,21 +210,20 @@
                     "6. Add coffee grounds to the water and gently stir",
                     "7. Let sit for about a minute",
                     "8. Remove from the heat source, then stir about 10 times",
-                    "9. The coffee will then be pulled back into the bottom bulb "
+                    "9. The coffee will then be pulled back into the bottom bulb",
+                    "10. Remove hopper from the bulb and enjoy"
         ],
         "prosCons": [
             {
                 "pros": [
                     "cool to watch",
-                    "",
-                    "",
-                    ""
+                    "delicate flavors"
                 ]
             },
             {
                 "cons": [
                     "more complicated",
-                    ""
+                    "can be expensive"
                 ]
             }
         ],
@@ -227,29 +233,30 @@
     {
         "methodName": "Percolators",
         "methodType": "Drip",
-        "equipment": "",
-        "description": "",
+        "equipment": ["percolator", "heat source", "something to boil water"],
+        "description": "This method requires the brewer to boil water before putting the water into the percolator. From there additional heat is added to the bottom to force the boiling water up the tube to be spread over the grounds, thus the sputtering sound.",
         "steps": [
-                    "1. ", 
-                    "2. ", 
-                    "3. ", 
-                    "4. ",
-                    "5. ",
-                    "6. "
+                    "1. Boil water then add to the base of the percolator", 
+                    "2. Put your desired amount of coffee grounds into the filter basket", 
+                    "3. Screw the top onto the base and place percolator on a heat source", 
+                    "4. You'll know it is working when you hear sputtering (if the coffee overflows turn the heat down)",
+                    "5. When the sputtering stops, remove from heat",
+                    "6. Discard the grounds and enjoy"
         ],
         "prosCons": [
             {
                 "pros": [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "they are durable",
+                    "portable",
+                    "can be used over an open flame(camping)",
+                    "full bodied cup"
                 ]
             },
             {
                 "cons": [
-                    "",
-                    ""
+                    "learning curve",
+                    "could come out bitter if heated for too long",
+                    "takes a long time"
                 ]
             }
         ],
@@ -259,29 +266,30 @@
     {
         "methodName": "Pourovers",
         "methodType": "Drip",
-        "equipment": "",
-        "description": "",
+        "equipment": ["pourover divice(ex. V60 or Kalita Wave)", "filters", "scale(optional)", "kettle"],
+        "description": "Many people who choose this brew method like to be as precise as possible when measuring out the amount of coffee and water to ensure they get as consistent as possible with each cup. While measuring everything keeps your coffee consistent, it is not required. If you just want a good cup of coffee you can just put the grounds in the filter, pour some water on top and enjoy your coffee.",
         "steps": [
-                    "1. ", 
-                    "2. ", 
-                    "3. ", 
-                    "4. ",
-                    "5. ",
-                    "6. "
+                    "1. Use the kettle to boil more water than you are planning on using", 
+                    "2. Put filter into brewing device and put your grounds into the filter", 
+                    "3. If you are measuring, make sure your divice is on the scale", 
+                    "4. Grind your desired amount of coffee for your cup size(usually about 1g of coffee per 17g of water)",
+                    "5. Cover the grounds with hot water (around 200F) and let the grounds bloom",
+                    "6. After about 30 seconds pour your desired amount of water over the grounds",
+                    "7. Allow the coffee to drip into the cup and enjoy when finished"
         ],
         "prosCons": [
             {
                 "pros": [
-                    "",
-                    "",
+                    "consistent",
+                    "delicate",
                     "",
                     ""
                 ]
             },
             {
                 "cons": [
-                    "",
-                    ""
+                    "time consuming",
+                    "can be expensive"
                 ]
             }
         ],
@@ -291,29 +299,30 @@
     {
         "methodName": "Chemex",
         "methodType": "Drip",
-        "equipment": "",
-        "description": "",
+        "equipment": ["Chemex", "filter", "kettle"],
+        "description": "The Chemex is one of the better known methods by coffee connoisseurs and has been producing great cups of coffee since 1941. It is an identical process to the pourover, but instead of brewing directly into your cup the coffee is held in the bottom the chemex. This is essentially a way to make pourover coffee but in a larger than single cup quantity.",
         "steps": [
-                    "1. ", 
-                    "2. ", 
-                    "3. ", 
-                    "4. ",
-                    "5. ",
-                    "6. "
+            "1. Use the kettle to boil more water than you are planning on using", 
+            "2. If you are measuring, make sure your divice is on the scale", 
+            "3. Put filter into chemex and put your grounds into the filter (measure if desired)", 
+            "4. Grind your desired amount of coffee for your cup size(usually about 1g of coffee per 17g of water)",
+            "5. Cover the grounds with hot water (around 200F) and let the grounds bloom",
+            "6. After about 30 seconds pour your desired amount of water over the grounds",
+            "7. Allow the coffee to drip into the chemex, pour into your cup and enjoy"
         ],
         "prosCons": [
             {
                 "pros": [
-                    "",
-                    "",
-                    "",
+                    "larger than a single cup",
+                    "looks fantastic",
+                    "consistent taste",
                     ""
                 ]
             },
             {
                 "cons": [
-                    "",
-                    ""
+                    "absolutely giant paper filters",
+                    "not very portable because it's glass"
                 ]
             }
         ],
@@ -323,20 +332,20 @@
     {
         "methodName": "Clever Dripper",
         "methodType": "Drip",
-        "equipment": "",
-        "description": "",
+        "equipment": ["clever dripper", "kettle"],
+        "description": "This brew method is similar to the pour over with the important difference of being able to stop the flow of coffee out of the bottom of the brewer. This allows the grounds to steep before filtering out resulting in a more full-flavored cup compared to the pourover.",
         "steps": [
-                    "1. ", 
-                    "2. ", 
-                    "3. ", 
-                    "4. ",
-                    "5. ",
-                    "6. "
+                    "1. Bring water to a boil", 
+                    "2. Place filter in dripper and add grounds", 
+                    "3. Pour desired amount of water onto grounds, cover and let steep for 1 minute", 
+                    "4. Uncover and stir to mix the grounds then cover again and let sit for 2 1/2 minutes",
+                    "5. Stir again",
+                    "6. Place dripper over your cup, pour and enjoy"
         ],
         "prosCons": [
             {
                 "pros": [
-                    "",
+                    "full-flavored",
                     "",
                     "",
                     ""
@@ -344,7 +353,7 @@
             },
             {
                 "cons": [
-                    "",
+                    "takes a while",
                     ""
                 ]
             }
