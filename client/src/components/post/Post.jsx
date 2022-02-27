@@ -2,7 +2,7 @@ import "./post.css";
 import { useQuery } from "@apollo/client";
 import { QUERY_POST } from '../../utils/queries';
 
-import coffeeCherry from '../post/CoffeeCherry.png'
+import coffeeCherry from '../post/coffee-seeds.jpeg'
 
 //QUERY_POST
 

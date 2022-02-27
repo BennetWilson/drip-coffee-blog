@@ -1,0 +1,20 @@
+
+.contactTitle {
+text-align: center;
+margin-top: 40px;
+font-family: 'The Girl Next Door', cursive;
+font-size: 70px;
+
+}
+
+.formcontainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.form-row {
+    width: 600px !important;
+}
