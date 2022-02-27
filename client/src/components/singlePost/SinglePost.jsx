@@ -1,7 +1,15 @@
 import React from 'react';
+import { QUERY_GET_USER } from '../../utils/queries';
 import './singlepost.css'
 
 export default function SinglePost () {
+    const { loading, data } = useQuery(QUERY_GET_USER);
+
+    const postList = data?.posts || [];
+
+    const [formData, setFormData] = useState({
+        
+    })
     return (
         <div className='singlePost'>
             <div className="singlePostWrapper">
