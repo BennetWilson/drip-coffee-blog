@@ -30,7 +30,6 @@ export default function TopBar() {
               WRITE
             </a>
           </li>
-          <li className="topListItem">{user && "LOGOUT"}</li>
         </ul>
       </div>
       <div className="topCenter">

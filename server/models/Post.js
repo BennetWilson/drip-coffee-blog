@@ -28,6 +28,11 @@ const postSchema = new mongoose.Schema(
       type: String,
      
     },
+    createdAt: {
+      type: Date,
+      default: Date.now,
+      get: (timestamp) => dateFormat(timestamp),
+    },
     comments: [
       {
         commentText: {

@@ -60,6 +60,7 @@ const resolvers = {
           title: args.title,
           desc: args.desc,
           photo: args.photo,
+          createdAt: args.createdAt
         });
 
         await User.findByIdAndUpdate(
