@@ -31,8 +31,14 @@
     font-weight: 700;
     margin-top: 15px;
     cursor: pointer;
+    text-decoration: none;
 
 }
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+  }
 
 .postDate{
     font-family: serif;
