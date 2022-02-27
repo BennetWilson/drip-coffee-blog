@@ -2,6 +2,8 @@ import "./post.css";
 import { useQuery } from "@apollo/client";
 import { QUERY_POST } from '../../utils/queries';
 
+import coffeeCherry from '../post/CoffeeCherry.png'
+
 //QUERY_POST
 
 
@@ -19,7 +21,7 @@ export default function Post() {
             return (<>
                 <div className="post">
                 <img className="postImg"
-                src="https://via.placeholder.com/250"
+                src={coffeeCherry}
                 alt=""
                 />
                 <div className="postInfo">
