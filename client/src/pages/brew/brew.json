@@ -1,0 +1,611 @@
+[
+    {
+        "methodName": "Cowboy Coffee",
+        "methodType": "Boil",
+        "equipment": "pot, open flame",
+        "description": "Unlike the name suggests, the cowboy coffee brew-method is used all over the world. It is one of the easiest methods as it doesn't require any special equipment outside of what most people already have in their kitchen. This method invovles boiling water, adding coffee grounds to the hot water, and pouring it into your mug of choice.",
+        "steps": [
+                    "1. Boil the desired amount of water in the pot", 
+                    "2. When water reaches a boil take off heat for about 30 seconds or until the water reaches 200F", 
+                    "3. Add ~2 tbsps of ground coffee per 8 ounces of water and stir", 
+                    "4. Let stand for 2 mins and stir again",
+                    "5. Let stand for another 2 mins then pour 1/2 cup of cold water onto floating grounds to help them sink",
+                    "6. Pour into cup (if you're worried about grounds pour slowly)"
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "cost effective",
+                    "relatively easy",
+                    "full flavor",
+                    "full bodied"
+                ]
+            },
+            {
+                "cons": [
+                    "coffee grounds in cup",
+                    "difficult to keep water temp consistent"
+                ]
+            }
+        ],
+        "results": "simple and full bodied cup of joe"
+        
+    },
+    {
+        "methodName": "Turkish Coffee",
+        "methodType": "Boil",
+        "equipment": "Cezve(wide-bottom pot traditionally used for turkish coffee, turkish coffee cups(optional), sand, granulated sugar",
+        "description": "While it may seem that the beans used for this brew method are from Turkey, it is actually referring to the grind size. Turkish coffee needs to be ground so fine that it looks like a powder. Traditionally, the powdered coffee is combined with water and boiled repeatedly while running the pot through hot sand. It can also be done without sand by just heating it over the stove.",
+        "steps": [
+                    "1. Add water to cezve", 
+                    "2. Add desired amount of sugar(optional) and stir", 
+                    "Boil can either be done directly on the stove or by heating up sand in a pan and running the pot throught the sand",
+                    "3. Boil, remove from heat and add a teaspoon of coffee per cup of water", 
+                    "4. Bring to a boil again",
+                    "5. Remove from heat after boil, discard the foam, then mix the coffee in well",
+                    "6. Repeat step 5 two additional times (for a total of 3) back to back but keep the foam from these two additional boils",
+                    "7. Let grounds settle to the bottom after last boil(add cold water to grounds to accelerate process)",
+                    "8. Pour into cup and serve"
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "frothy texture",
+                    "full bodied flavor"
+                ]
+            },
+            {
+                "cons": [
+                    "requires equipment",
+                    "difficult if using the sand method",
+                    "small quantities unless using a large pot"
+                ]
+            }
+        ],
+        "results": "more complicated than cowboy coffee but because of the fine grind size it is a much more full bodied cup"
+        
+    },
+    {
+        "methodName": "French Press",
+        "methodType": "Steep",
+        "equipment": "French Press",
+        "description": "",
+        "steps": [
+                    "1. Boil water and allow to cool to around 200F", 
+                    "2. Add course ground coffee to empty french press", 
+                    "3. Cover grounds with the hot water and let sit for 20 secons", 
+                    "4. Pour remaining water into french press",
+                    "5. Allow to sit for 4-5 minutes",
+                    "6. Plunge, pour and enjoy"
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "cons": [
+                    "can leave sediment at the bottom of your cup",
+                    ""
+                ]
+            }
+        ],
+        "results": ""
+        
+    },
+    {
+        "methodName": "Cold Brew",
+        "methodType": "Steep",
+        "equipment": "large container, fridge",
+        "description": "This is another easy brew method that requires little time and effort to produce a great tasting cup of coffee. Essentially put the coffee and water in the fridge and pour your coffee the next morning.",
+        "steps": [
+                    "1. Combine course ground coffee with desired amount of water inside container", 
+                    "2. Place container in fridge", 
+                    "3. Let steep overnight", 
+                    "4. Strain grounds from water",
+                    "5. Pour over ice (or not if you like concentrated coffee) and enjoy"
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "easy",
+                    "not too watery or too bitter",
+                    "smooth",
+                    "can produce as much coffee as you can fit in your fridge"
+                ]
+            },
+            {
+                "cons": [
+                    "cold so not great for cold winter mornings",
+                    "takes a long time to brew"
+                ]
+            }
+        ],
+        "results": ""
+        
+    },
+    {
+        "methodName": "Coffee Bags",
+        "methodType": "Steep",
+        "equipment": "Coffee bag",
+        "description": "It's like brewing a single serving of tea but it's coffee",
+        "steps": [
+                    "1. Fill cup with just boiled water", 
+                    "2. Add the coffee bag to the water", 
+                    "3. Let steep for at least 10 seconds(longer for stronger)", 
+                    "4. Remove bag, squeezing out the extra liquid",
+                    "5. Enjoy"
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "easy",
+                    "really easy",
+                    "this is like pretty easy",
+                    "easy"
+                ]
+            },
+            {
+                "cons": [
+                    "freshness isn't the best",
+                    "again this is really easy"
+                ]
+            }
+        ],
+        "results": ""
+        
+    },
+    {
+        "methodName": "Instant Coffee",
+        "methodType": "Steep",
+        "equipment": "None",
+        "description": "This is an easy brew method ",
+        "steps": [
+                    "1. Bring water to a boil", 
+                    "2. Allow the water to cool for about a minute",
+                    "3. Add a heaping teaspoon to your mug then add the hot water and stir", 
+                    "4. Once the coffee is dissolved you can enjoy"
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "cons": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "results": ""
+        
+    },
+    {
+        "methodName": "Siphon Brewers",
+        "methodType": "Steep",
+        "equipment": "",
+        "description": "",
+        "steps": [
+                    "1. Make sure your filter is in the correct position in the hopper (top part of siphon)", 
+                    "2. Add recently boiled water to the bottom bulb of the siphon", 
+                    "3. Attach the two pieces together and position over heat source", 
+                    "4. Heat water until it moves into the hopper ",
+                    "5. Turn down heat source to keep water at around 200F",
+                    "6. Add coffee grounds to the water and gently stir",
+                    "7. Let sit for about a minute",
+                    "8. Remove from the heat source, then stir about 10 times",
+                    "9. The coffee will then be pulled back into the bottom bulb "
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "cool to watch",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "cons": [
+                    "more complicated",
+                    ""
+                ]
+            }
+        ],
+        "results": ""
+        
+    },
+    {
+        "methodName": "Percolators",
+        "methodType": "Drip",
+        "equipment": "",
+        "description": "",
+        "steps": [
+                    "1. ", 
+                    "2. ", 
+                    "3. ", 
+                    "4. ",
+                    "5. ",
+                    "6. "
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "cons": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "results": ""
+        
+    },
+    {
+        "methodName": "Pourovers",
+        "methodType": "Drip",
+        "equipment": "",
+        "description": "",
+        "steps": [
+                    "1. ", 
+                    "2. ", 
+                    "3. ", 
+                    "4. ",
+                    "5. ",
+                    "6. "
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "cons": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "results": ""
+        
+    },
+    {
+        "methodName": "Chemex",
+        "methodType": "Drip",
+        "equipment": "",
+        "description": "",
+        "steps": [
+                    "1. ", 
+                    "2. ", 
+                    "3. ", 
+                    "4. ",
+                    "5. ",
+                    "6. "
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "cons": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "results": ""
+        
+    },
+    {
+        "methodName": "Clever Dripper",
+        "methodType": "Drip",
+        "equipment": "",
+        "description": "",
+        "steps": [
+                    "1. ", 
+                    "2. ", 
+                    "3. ", 
+                    "4. ",
+                    "5. ",
+                    "6. "
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "cons": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "results": ""
+        
+    },
+    {
+        "methodName": "Auto Drip Machines",
+        "methodType": "Drip",
+        "equipment": "",
+        "description": "",
+        "steps": [
+                    "1. ", 
+                    "2. ", 
+                    "3. ", 
+                    "4. ",
+                    "5. ",
+                    "6. "
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "cons": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "results": ""
+        
+    },
+    {
+        "methodName": "Espresso Machine",
+        "methodType": "Pressure",
+        "equipment": "",
+        "description": "",
+        "steps": [
+                    "1. ", 
+                    "2. ", 
+                    "3. ", 
+                    "4. ",
+                    "5. ",
+                    "6. "
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "cons": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "results": ""
+        
+    },
+    {
+        "methodName": "Moka Pot",
+        "methodType": "Pressure",
+        "equipment": "",
+        "description": "",
+        "steps": [
+                    "1. ", 
+                    "2. ", 
+                    "3. ", 
+                    "4. ",
+                    "5. ",
+                    "6. "
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "cons": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "results": ""
+        
+    },
+    {
+        "methodName": "Aeropress",
+        "methodType": "Pressure",
+        "equipment": "",
+        "description": "",
+        "steps": [
+                    "1. ", 
+                    "2. ", 
+                    "3. ", 
+                    "4. ",
+                    "5. ",
+                    "6. "
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "cons": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "results": ""
+        
+    },
+    {
+        "methodName": "Single-Serve-Pod Machines",
+        "methodType": "Pressure",
+        "equipment": "",
+        "description": "",
+        "steps": [
+                    "1. ", 
+                    "2. ", 
+                    "3. ", 
+                    "4. ",
+                    "5. ",
+                    "6. "
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "cons": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "results": ""
+        
+    },
+    {
+        "methodName": "Vietnamese Phin",
+        "methodType": "Lesser Known",
+        "equipment": "",
+        "description": "",
+        "steps": [
+                    "1. ", 
+                    "2. ", 
+                    "3. ", 
+                    "4. ",
+                    "5. ",
+                    "6. "
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "cons": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "results": ""
+        
+    },
+    {
+        "methodName": "Nitrous Coffee",
+        "methodType": "Lesser Known",
+        "equipment": "",
+        "description": "",
+        "steps": [
+                    "1. ", 
+                    "2. ", 
+                    "3. ", 
+                    "4. ",
+                    "5. ",
+                    "6. "
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "cons": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "results": ""
+        
+    },
+    {
+        "methodName": "Puerto Recan Coffee",
+        "methodType": "Lesser Known",
+        "equipment": "",
+        "description": "",
+        "steps": [
+                    "1. ", 
+                    "2. ", 
+                    "3. ", 
+                    "4. ",
+                    "5. ",
+                    "6. "
+        ],
+        "prosCons": [
+            {
+                "pros": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "cons": [
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "results": ""
+        
+    }
+]
