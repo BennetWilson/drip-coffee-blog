@@ -1,11 +1,12 @@
 import React from "react";
 import "../../App.css";
+import "./Contact.css";
 
 export default function Contact() {
   return (
     <div>
+      <h1 className="contactTitle">CONTACT US</h1>
       <div className="formcontainer">
-        <h1 className="contactTitle">Message Me</h1>
         <form
           className="contactForm"
           target="_blank"
@@ -13,8 +14,8 @@ export default function Contact() {
           method="POST"
         >
           <div class="form-group">
-            <div class="form-row">
-              <div class="col">
+            <div className="form-row">
+              <div className="col">
                 <input
                   type="text"
                   name="name"
@@ -44,13 +45,13 @@ export default function Contact() {
             ></textarea>
           </div>
           <div className="btnOrion">
-          <button
-            className="contactBtn"
-            type="submit"
-            // class="btn btn-lg btn-dark btn-block"
-          >
-            Submit Form
-          </button>
+            <button
+              className="contactBtn"
+              type="submit"
+              // class="btn btn-lg btn-dark btn-block"
+            >
+              Submit Form
+            </button>
           </div>
         </form>
       </div>
