@@ -2,6 +2,7 @@ import TopBar from "./components/topbar/Topbar";
 import "./App.css";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
+import Contact from "./pages/contact/Contact";
 import Settings from "./pages/settings/Settings";
 import Login from "./pages/login/Login";
 import Home from "./pages/home/Home";
@@ -54,6 +55,9 @@ function App() {
         </Route>
         <Route path="/write"  > 
         <Write />
+        </Route>
+        <Route path="/contact"  > 
+        <Contact />
         </Route>
         <Route path="/settings"  >
         <Settings />
