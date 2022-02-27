@@ -51,7 +51,6 @@
     font-weight: 600;
 }
 .topListItem:hover{
-  text-decoration: underline;
   transform: scale(1.1);
   color: #ab7343;
 }

@@ -55,6 +55,7 @@ query singlePost($postId: ID!) {
     title
     desc
     photo
+    createdAt
     comments {
       _id
       commentText
@@ -73,6 +74,7 @@ query posts{
     title
     desc
     photo
+    createdAt
   
   }
 }

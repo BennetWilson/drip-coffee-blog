@@ -31,7 +31,7 @@ export default function Post() {
                     {post.title} 
                     </span>
                     <hr/>
-                    <span className="postDate">1 hour ago</span>
+                    <span className="postDate">{post.createdAt}</span>
                 </div>
                 <p className="postDesc">{post.desc}
                 </p>
