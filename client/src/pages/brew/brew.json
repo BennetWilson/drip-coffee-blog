@@ -1,3 +1,4 @@
+
 [
     {
         "methodName": "Cowboy Coffee",
@@ -31,8 +32,8 @@
         "results": "simple and full bodied cup of joe",
         "recipes": [
             {
-                "id": "1",
-                ""
+                "id": "1"
+                
             },
             {
 
@@ -40,6 +41,7 @@
         ]
         
     },
+
     {
         "methodName": "Turkish Coffee",
         "methodType": "Boil",
