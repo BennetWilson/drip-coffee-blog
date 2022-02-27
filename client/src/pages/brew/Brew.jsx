@@ -43,25 +43,16 @@ export default function Brew() {
                   <Card.Text className="description">
                     {example.description}
                     <br></br>
-                    {example.tech}
+                    {example.steps}
+                    <br></br>
+                    {example.pros}
+                    {example.cons}
+                    <br></br>
+                    {example.results}
+                    <br></br>
+                    {example.recipes1}
                   </Card.Text>
                 </Col>
-                <div>
-                  <Button
-                    className="portBtn"
-                    href={example.link}
-                    traget="_blank"
-                  >
-                    {example.name}
-                  </Button>
-                  <Button
-                    className="portBtn"
-                    href={example.github}
-                    traget="_blank"
-                  >
-                    GitHub Repository
-                  </Button>
-                </div>
               </Card.Body>
             </Card>
           ))}

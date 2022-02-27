@@ -42,8 +42,7 @@ export default function TopBar() {
       <div className="topCenter">
         <a
           target="_blank"
-          href="https://www.aedin.com/in/taylor-garrey-4934b71a8/"
-        >
+          href="https://www.linkedin.com/in/taylor-garrey-4934b71a8/" >
           {" "}
           <i className="topIcon fa-brands fa-linkedin"></i>{" "}
         </a>
