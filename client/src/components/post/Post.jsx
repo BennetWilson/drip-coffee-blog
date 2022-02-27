@@ -26,12 +26,14 @@ export default function Post() {
                 />
                 <div className="postInfo">
                     <div className="postCats">
-                       <span className="postCat">Music</span> 
-                       <span className="postCat">Life</span> 
+                       {/* <span className="postCat">Music</span> 
+                       <span className="postCat">Life</span>  */}
                     </div>
+                    <a classname='postTitle' href={`/post/${post._id}`}>
                     <span className="postTitle">
                     {post.title} 
                     </span>
+                    </a>
                     <hr/>
                     <span className="postDate">{post.createdAt}</span>
                 </div>

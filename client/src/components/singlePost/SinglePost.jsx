@@ -1,21 +1,22 @@
 import React,{useState} from 'react';
-import { QUERY_GET_USER } from '../../utils/queries';
+import { QUERY_SINGLE_POST } from '../../utils/queries';
 import {useQuery} from '@apollo/client'
 import './singlepost.css'
 
 export default function SinglePost () {
-    const { loading, data } = useQuery(QUERY_GET_USER);
-
-    const postList = data?.posts || [];
-
-    const [formData, setFormData] = useState({
+    const {loading, data} = useQuery(QUERY_SINGLE_POST)
+       
+       console.log(data)
+   
+    return(
+        // <>
+        // {loading?"still loading" : posts.map(post => {
+        //     return (
         
-    })
-    return (
         <div className='singlePost'>
             <div className="singlePostWrapper">
                 <img src="https://via.placeholder.com/250" alt="" className="singlePostImg" />
-                <h1 className="singlePostTitle">This is what you see after you click on one of the posts on the main page
+                <h1 className="singlePostTitle">{data.title}
                 <div className="singlePostEdit">
                     <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
                     <i className="singlePostIcon fa-solid fa-trash"></i>
@@ -23,11 +24,19 @@ export default function SinglePost () {
                 </h1>
                 <div className="singlePostInfo">
                     <span className='singlePostAuthor'>Author: <b>Ben</b></span>
-                    <span className='singlePostDate'>1 hour ago </span>
+                    <span className='singlePostDate'>{data.createdAt} </span>
                 </div>
-                <p className='singlePostDescription'>This would be that single description called using QUERY_SINGLE_POST.</p>
+                <p className='singlePostDescription'>{data.desc}</p>
             </div>
         </div>
+        
+            
+//         )
+//         }
+//         )
+         
+//     }
+// </>
     );
 }
 
