@@ -45,7 +45,7 @@ export default function TopBar() {
           href="https://www.aedin.com/in/taylor-garrey-4934b71a8/"
         >
           {" "}
-          <i className="topIcon fa-brands fa-aedin"></i>{" "}
+          <i className="topIcon fa-brands fa-linkedin"></i>{" "}
         </a>
         <a target="_blank" href="https://github.com/BennetWilson/drip-blog">
           {" "}

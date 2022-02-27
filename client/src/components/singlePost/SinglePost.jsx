@@ -1,22 +1,39 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { QUERY_SINGLE_POST } from '../../utils/queries';
+import { useParams } from 'react-router-dom';
 import {useQuery} from '@apollo/client';
 import './singlepost.css';
 
 export default function SinglePost () {
-    const {loading, data} = useQuery(QUERY_SINGLE_POST);
+    const {postId} = useParams();
+    console.log(postId);
+    const [cardData, setCardData] = useState({})
+    const {loading, data} = useQuery(QUERY_SINGLE_POST, {
+        variables: {postId: postId }
+    });
+    //  useEffect(() => {
+    //     effect
+    //     return () => {
+    //         cleanup
+    //     };
+    // }, [input]);
 
-    const post = data?.post || [];
+    const post = data?.singlePost || {};
+    console.log(post);
+    console.log(data);
+    if (loading) {
+        return <div>Loading...</div>;
+      }
 
-    // const [formData, setFormData] = useState({
-            
-    //     })
+    // setCardData(post);
+    
         return(
    
         <>
         <div className='singlePost'>
             <div className="singlePostWrapper">
-                <img src="https://via.placeholder.com/250" alt="" className="singlePostImg" />
+                {/* post.photo needs ../ backticks like line 59 write.jsx */}
+                <img src={post.photo} alt="" className="singlePostImg" />
                 <h1 className="singlePostTitle">{post.title}
                 <div className="singlePostEdit">
                     <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
@@ -24,7 +41,7 @@ export default function SinglePost () {
                     </div>
                 </h1>
                 <div className="singlePostInfo">
-                    <span className='singlePostAuthor'>Author: <b>Ben</b></span>
+                    <span className='singlePostAuthor'>Author: <b>{post.username}</b></span>
                     <span className='singlePostDate'>{post.createdAt} </span>
                 </div>
                 <p className='singlePostDescription'>{post.desc}</p>

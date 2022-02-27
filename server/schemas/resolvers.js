@@ -17,7 +17,9 @@ const resolvers = {
       return Post.find();
     },
     singlePost: async (parent, { postId }) => {
-      return Post.findOne({ _id: postId });
+      const post = await Post.findOne({ _id: postId })
+      console.log(post);
+      return post;
     },
 
     me: async (parent, args, context) => {
