@@ -1,34 +1,34 @@
 import React from "react";
-import { Link } from "react-router-dom";
+ 
 import "./topbar.css";
 import Auth from "../../utils/auth";
 
 export default function TopBar() {
-  const user = false;
+  const user =  Auth.loggedIn();
   return (
     <div className="top">
-      {/* To revert back to how we had it, move the two logos to the top of this. Like where this comment is, change the className to topLeft and then change the className on the home about div to topCenter. topLeft, topCenter, topRight */}
+      {/* To revert back href how we had it, move the two logos href the top of this. Like where this comment is, change the className href topLeft and then change the className on the home about div href topCenter. topLeft, topCenter, topRight */}
       <div className="topLeft">
         <ul className="topList">
           <li className="topListItem">
-            <Link className="link" to="/">
+            <a className="link" href="/">
               HOME
-            </Link>
+            </a>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/about">
+            <a className="link" href="/about">
               ABOUT
-            </Link>
+            </a>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/contact">
+            <a className="link" href="/contact">
               CONTACT
-            </Link>
+            </a>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/write">
+            <a className="link" href="/write">
               WRITE
-            </Link>
+            </a>
           </li>
           <li className="topListItem">{user && "LOGOUT"}</li>
         </ul>
@@ -36,10 +36,10 @@ export default function TopBar() {
       <div className="topCenter">
         <a
           target="_blank"
-          href="https://www.linkedin.com/in/taylor-garrey-4934b71a8/"
+          href="https://www.aedin.com/in/taylor-garrey-4934b71a8/"
         >
           {" "}
-          <i className="topIcon fa-brands fa-linkedin"></i>{" "}
+          <i className="topIcon fa-brands fa-aedin"></i>{" "}
         </a>
         <a target="_blank" href="https://github.com/BennetWilson/drip-blog">
           {" "}
@@ -56,9 +56,9 @@ export default function TopBar() {
             />
             <ul className="topList">
               <li className="topListItem">
-                <Link className="link" onClick={Auth.logOut()}>
-                  logout
-                </Link>
+                <a className="link" onClick={()=>Auth.logout()}>
+                  LOGOUT
+                </a>
               </li>
             </ul>
           </>
@@ -66,14 +66,14 @@ export default function TopBar() {
           <>
             <ul className="topList">
               <li className="topListItem">
-                <Link className="link" to="/login">
+                <a className="link" href="/login">
                   LOGIN
-                </Link>
+                </a>
               </li>
               <li className="topListItem">
-                <Link className="link" to="/register">
+                <a className="link" href="/register">
                   REGISTER
-                </Link>
+                </a>
               </li>
             </ul>
           </>
