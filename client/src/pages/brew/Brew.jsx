@@ -105,7 +105,7 @@ export default function Brew() {
         step10: "10. Remove hopper from the bulb and enjoy",
         pros: "cool to watch, delicate flavors",
         cons: "complicated, can be expensive"
-    },
+    }
 
   ]);
 
@@ -115,10 +115,8 @@ export default function Brew() {
       <div className="">
       <h1 className="brewTitle">Brewing Methods</h1>
         <div className="brew">
-           
           {methods.map((example, i) => (
             <Card key={example.methodName} className="methodCard">
-
               <Card.Body>
                 <Col>
                   <Card.Text className="description">
@@ -146,35 +144,8 @@ export default function Brew() {
                     <div className="methodSteps">{example.step8}</div>
                     <div className="methodSteps">{example.step9}</div>
                     <br></br>
-                    <div className="prosCons">
                     <div className="methodPro">{example.pros}</div>
-
-              <Col className="img-col">
-                <img
-                  src={require(`../../Assets/coffee-images/${example.image}.png`)}
-                  alt="Img of portfolio project"
-                  className="project-image"
-                />
-              </Col>
-              <Card.Body>
-                <Col>
-                  <Card.Text className="description">
-                    <div className="methodName">{example.methodName}</div>
-                    <br></br>
-                   <div className="methodType">{example.methodType}</div> 
-                    <br></br>
-                    <div className="methodType">{example.equipment}</div>
-                    <br></br>
-                    <div className="methodDesc">{example.description}</div>
-                    <br></br>
-                    <div className="methodSteps">{example.steps}</div>
-                    
-
-                    <br></br>
-                    <div className="methodPro">{example.cons}</div>
-                    <br></br>
-                    </div>
-                    <div className="methodRes"> {example.results}</div>
+                    <div className="prosCons">{example.cons}</div>
                     <br></br>
                     {example.recipes1}
                   </Card.Text>
@@ -183,8 +154,8 @@ export default function Brew() {
             </Card>
           ))}
         </div>
+        <SideBar />
       </div>
-      <SideBar />
     </>
-  );
+  )
 }

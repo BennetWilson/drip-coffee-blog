@@ -6,8 +6,14 @@ import { ADD_POST } from "../../utils/mutations";
 import Auth from "../../utils/auth";
 
 const Write = (props) => {
-  const [formState, setFormState] = useState({ title: "", desc: "", photo: "" });
-  const [imageSrc, setImageSrc] = useState('Assets/coffee-images/coffee-cup.png')
+  const [formState, setFormState] = useState({
+    title: "",
+    desc: "",
+    photo: "",
+  });
+  const [imageSrc, setImageSrc] = useState(
+    "Assets/coffee-images/coffee-cup.png"
+  );
   const [write] = useMutation(ADD_POST);
 
   const handleChange = (event) => {
@@ -25,9 +31,7 @@ const Write = (props) => {
       ...formState,
       [name]: value,
     });
-    setImageSrc(
-      value
-    )
+    setImageSrc(value);
   };
 
   const handleFormSubmit = async (event) => {
@@ -37,25 +41,20 @@ const Write = (props) => {
       const { data } = await write({
         variables: { ...formState },
       });
-
       setFormState({
         title: "",
         desc: "",
-        photo:""
+        photo: "",
       });
 
       // console.log(data, "this is data consolelog")
       Auth.loggedIn(data.loggedIn.token);
 
       // auth?
-
-
     } catch (e) {
-      console.error(e,'Not logged in');
-      window.alert("Please Log In To Publish a Post")
+      console.error(e, "Not logged in");
+      window.alert("Please Log In To Publish a Post");
     }
-
-    
   };
 
   return (
@@ -63,27 +62,32 @@ const Write = (props) => {
       {/* add coffee select images */}
       <label for="coffee-images">Choose an image:</label>
 
-<select onChange={handleDropdownChange} 
-name="coffee-images" id="coffee">
-  <option value="../Assets/coffee-images">Coffee Cup</option>
-  <option value="saab">Coffee Beans</option>
-  <option value="mercedes">Coffee maker</option>
-  <option value="audi">Audi</option>
-</select>
+      <select onChange={handleDropdownChange} name="coffee-images" id="coffee">
+        <option value="../Assets/coffee-images">Coffee Cup</option>
+        <option value="saab">Coffee Beans</option>
+        <option value="mercedes">Coffee maker</option>
+        <option value="audi">Audi</option>
+      </select>
       <img className="writeImg" src={`../../${imageSrc}`} alt="" />
       <form className="writeForm" onSubmit={handleFormSubmit}>
         <div className="writeFormGroup">
           <label htmlFor="fileInput">
             <i className="writeIcon fa-solid fa-plus"></i>
           </label>
-          <input type="file" id="fileInput" style={{ display: "none" }} onChange={handleChange} name='photo'/>
+          <input
+            type="file"
+            id="fileInput"
+            style={{ display: "none" }}
+            onChange={handleChange}
+            name="photo"
+          />
           <input
             type="text"
             placeholder="Title"
             className="writeInput"
             autoFocus={true}
             onChange={handleChange}
-            name='title'
+            name="title"
             value={formState.title}
           />
         </div>
@@ -93,7 +97,7 @@ name="coffee-images" id="coffee">
             type="text"
             className="writeInput writeText"
             onChange={handleChange}
-            name='desc'
+            name="desc"
             value={formState.desc}
           ></textarea>
           <button
