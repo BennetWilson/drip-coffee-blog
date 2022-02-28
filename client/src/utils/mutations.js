@@ -31,8 +31,7 @@ mutation addPost($title: String, $desc:String, $photo:String) {
     username
       title
       desc
-      photo
-    
+      photo  
   }
 }
 
@@ -42,7 +41,6 @@ export const REMOVE_POST = gql`
 mutation removePost($postId: ID!) {
   removePost(postId: $postId) {
     _id
-    
   }
 }
 `;
