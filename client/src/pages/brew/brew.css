@@ -1,5 +1,4 @@
 
-
 .brewTitle {
     text-align: center;
     font-size: 80px;
@@ -8,7 +7,6 @@
 }
 
 .methodCard {
-   
     display: flex !important;
     /* justify-content: center !important;
     text-align: center; */
@@ -23,19 +21,15 @@
     overflow: scroll;
     height: 1000px;
     margin-top: 50px;
-   
-}
-
-.methodCard {
     display: flex !important;
     justify-content: center !important;
     text-align: center;
-
+   
 }
+
 
 .brew {
     display: flex !important;
-
     flex-wrap: wrap;
     justify-content: center !important;
     text-align: center;
@@ -59,10 +53,9 @@
 
 .methodType {
     font-size: 30px;
-
-    justify-content: center !important;
-    text-align: center;
     margin-top: 40px;
+    margin-bottom: -5px;
+    margin-top: 30px;
 }
 
 .methodName {
@@ -76,12 +69,10 @@
 }
 
 .methodDesc {
-
     font-size: 25px;
     font-weight: 700;
     border: solid;
     border-radius: 3%;
-   
 }
 
 .methodSteps {
@@ -93,6 +84,7 @@
 .methodPro {
     font-size: 25px;
     font-weight: 700;
+    padding-bottom: 5px;
 }
 
 .prosCons {
@@ -104,7 +96,6 @@
 .methodRes{
     font-size: 25px;
     font-weight: 700;
-
     font-size: 20px;
     font-weight: 700;
 }
@@ -112,6 +103,10 @@
 .methodSteps {
     font-size: 20px;
     font-weight: 700;
-    width: 30%
+    /* width: 30% */
+}
 
+.methodRecipes {
+    font-size: 20px;
+    font-weight: 700;
 }
