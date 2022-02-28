@@ -12,6 +12,7 @@ export default function Brew() {
       image: "cowboy-coffee",
       methodName: "Cowboy Coffee",
       methodType: "Method: Boil",
+
       equipment: "Equipment: Metal Pot, Open Flame",
       description: "Unlike the name suggests, the cowboy coffee brew-method is used all over the world. It is one of the easiest methods as it doesn't require any special equipment outside of what most people already have in their kitchen. This method invovles boiling water, adding coffee grounds to the hot water, and pouring it into your mug of choice.",
       step1: "1. Boil the desired amount of water in the pot",
@@ -23,6 +24,16 @@ export default function Brew() {
       pros: "Pros- cost effective, relatively easy, full flavor,full bodied",
       cons: "Cons - coffee grounds in cup, difficult to keep water temp consistent",
       results: "Results - simple and full bodied cup of joe",
+
+      equipment: "Equipment: pot, open flame",
+      description:
+        "Unlike the name suggests, the cowboy coffee brew-method is used all over the world. It is one of the easiest methods as it doesn't require any special equipment outside of what most people already have in their kitchen. This method invovles boiling water, adding coffee grounds to the hot water, and pouring it into your mug of choice.",
+      steps:
+        "1. Boil the desired amount of water in the pot 2. When water reaches a boil take off heat for about 30 seconds or until the water reaches 200F 3. Add ~2 tbsps of ground coffee per 8 ounces of water and stir 4. Let stand for 2 mins and stir again 5. Let stand for another 2 mins then pour 1/2 cup of cold water onto floating grounds to help them sink 6. Pour into cup (if you're worried about grounds pour slowly)",
+      pros: "pros- cost effective, relatively easy, full flavor,full bodied",
+      cons: "cons - coffee grounds in cup, difficult to keep water temp consistent",
+      results: "simple and full bodied cup of joe",
+
       recipes1: "",
     },
     {
@@ -107,6 +118,7 @@ export default function Brew() {
            
           {methods.map((example, i) => (
             <Card key={example.methodName} className="methodCard">
+
               <Card.Body>
                 <Col>
                   <Card.Text className="description">
@@ -136,6 +148,28 @@ export default function Brew() {
                     <br></br>
                     <div className="prosCons">
                     <div className="methodPro">{example.pros}</div>
+
+              <Col className="img-col">
+                <img
+                  src={require(`../../Assets/coffee-images/${example.image}.png`)}
+                  alt="Img of portfolio project"
+                  className="project-image"
+                />
+              </Col>
+              <Card.Body>
+                <Col>
+                  <Card.Text className="description">
+                    <div className="methodName">{example.methodName}</div>
+                    <br></br>
+                   <div className="methodType">{example.methodType}</div> 
+                    <br></br>
+                    <div className="methodType">{example.equipment}</div>
+                    <br></br>
+                    <div className="methodDesc">{example.description}</div>
+                    <br></br>
+                    <div className="methodSteps">{example.steps}</div>
+                    
+
                     <br></br>
                     <div className="methodPro">{example.cons}</div>
                     <br></br>
