@@ -10,7 +10,7 @@ export default function TopBar() {
       {/* To revert back href how we had it, move the two logos href the top of this. Like where this comment is, change the className href topLeft and then change the className on the home about div href topCenter. topLeft, topCenter, topRight */}
       <div className="topLeft">
         <ul className="topList">
-          <li className="topListItem">
+          <li className="topListItem topListItemHome">
             <a className="link" href="/">
               HOME
             </a>
