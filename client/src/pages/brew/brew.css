@@ -10,7 +10,7 @@
     display: flex !important;
     /* justify-content: center !important;
     text-align: center; */
-    width: 600px !important;
+    max-width: 640px !important;
     margin-right: 70px;
     border: solid; 
     border-color: #ab7343;

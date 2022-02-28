@@ -70,8 +70,8 @@ export default function Brew() {
         step3: "3. Let steep overnight", 
         step4: "4. Strain grounds from water",
         step5: "5. Pour over ice (or not if you like concentrated coffee) and enjoy",
-        pros: "easy, nice easy flavors, smooth, can produce as much coffee as you can fit in your fridge",
-        cons: "coffee grounds in cup, difficult to keep water temp consistent",
+        pros: "Pros - easy, nice easy flavors, smooth, can produce as much coffee as you can fit in your fridge",
+        cons: "Cons - coffee grounds in cup, difficult to keep water temp consistent",
         recipe1: ""
     },
     {
@@ -90,9 +90,40 @@ export default function Brew() {
         step8: "8. Remove from the heat source, then stir about 10 times",
         step9: "9. The coffee will then be pulled back into the bottom bulb",
         step10: "10. Remove hopper from the bulb and enjoy",
-        pros: "cool to watch, delicate flavors",
-        cons: "complicated, can be expensive"
-    }
+        pros: "Pros - cool to watch, delicate flavors",
+        cons: "Cons - complicated, can be expensive"
+    },
+    {
+        image: "pour-over",
+        methodName: "Pourover",
+        methodType: "Method: Drip",
+        equipment: "Equipment: Pourover Divice(V60 or Kalita Wave), Filters, Scale(optional), Kettle, Heat Source",
+        description: "Many people who choose this brew method like to be as precise as possible when measuring out the amount of coffee and water to ensure they get as consistent as possible with each cup. While measuring everything keeps your coffee consistent, it is not required. If you just want a good cup of coffee you can just put the grounds in the filter, pour some water on top and enjoy your coffee.",
+        step1: "1. Use the kettle to boil more water than you are planning on using", 
+        step2: "2. Put filter into brewing device and put your grounds into the filter", 
+        step3: "3. If you are measuring, make sure your divice is on the scale", 
+        step4: "4. Grind your desired amount of coffee for your cup size(usually about 1g of coffee per 17g of water)",
+        step5: "5. Cover the grounds with hot water (around 200F) and let the grounds bloom",
+        step6: "6. After about 30 seconds pour your desired amount of water over the grounds",
+        step7: "7. Allow the coffee to drip into the cup and enjoy when finished",
+        pros: "Pros - consistent, delicate",
+        cons: "Cons - time consuming, can be expensive"
+    },
+    {
+        image: "percolator",
+        methodName: "Percolators",
+        methodType: "Method: Drip",
+        equipment: "Equipment: Percolator, Kettle, Heat Source",
+        description: "This method requires the brewer to boil water before putting the water into the percolator. From there additional heat is added to the bottom to force the boiling water up the tube to be spread over the grounds, thus the sputtering sound.",
+        step1: "1. Boil water then add to the base of the percolator", 
+        step2: "2. Put your desired amount of coffee grounds into the filter basket", 
+        step3: "3. Screw the top onto the base and place percolator on a heat source", 
+        step4: "4. You'll know it is working when you hear sputtering (if the coffee overflows turn the heat down)",
+        step5: "5. When the sputtering stops, remove from heat",
+        step6: "6. Discard the grounds and enjoy",
+        pros: "Pros - durable, portable, can be taken camping, full bodied cup",
+        cons: "Cons - learning curve, not time efficient"
+    },
 
   ]);
 
