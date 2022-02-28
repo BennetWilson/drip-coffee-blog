@@ -57,7 +57,7 @@ export default function SinglePost () {
         <CommentList comments={post.comments} />
       </div>
       <div className="m-3 p-4" style={{ border: '1px dotted #1a1a1a' }}>
-        <CommentForm thoughtId={post._id} />
+        <CommentForm postId={postId} />
       </div>
 
 

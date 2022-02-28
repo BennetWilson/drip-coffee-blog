@@ -18,7 +18,7 @@ const CommentForm = ({ postId }) => {
     try {
       const { data } = await addComment({
         variables: {
-        //   postId: '621bae4164d95c3b876f83e3',
+          // postId: '621c42efb5f59acd8e484708',
           postId,
           commentText,
           commentAuthor: Auth.getProfile().data.username,
@@ -28,7 +28,7 @@ const CommentForm = ({ postId }) => {
       setCommentText("");
     } catch (err) {
       console.error(err);
-      console.log("This error occurred");
+      console.log("postId still not working");
     }
   };
 
