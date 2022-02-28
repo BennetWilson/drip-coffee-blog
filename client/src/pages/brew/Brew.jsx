@@ -28,7 +28,7 @@ export default function Brew() {
         image: "turkish-coffee",
         methodName: "Turkish Coffee",
         methodType: "Method: Boil",
-        equipment: "Equipment: Cezve(wide-bottom pot traditionally used for turkish coffee, turkish coffee cups(optional), sand, granulated sugar",
+        equipment: "Equipment: Cezve(a wide-bottomed pot traditionally used for turkish coffee), turkish coffee cups(optional), sand(optional), granulated sugar",
         description: "While it may seem that the beans used for this brew method are from Turkey, it is actually referring to the grind size. Turkish coffee needs to be ground so fine that it looks like a powder. Traditionally, the powdered coffee is combined with water and boiled repeatedly while running the pot through hot sand. It can also be done without sand by just heating it over the stove.",
         step1: "1. Add water to cezve",
         step2: "2. Add desired amount of sugar(optional) and stir",
@@ -48,7 +48,7 @@ export default function Brew() {
         methodName: "French Press",
         methodType: "Method: Steep",
         equipment: "Equipment: French Press",
-        description: "This method uses a large glass cylinder with a metal mesh filter inside it. The grounds are placed on top of the filter and the water is poured on top of the grounds. After steeping the filter plunger is used to seperate the grounds from the coffee.",
+        description: "This method uses a large glass cylinder with a metal mesh filter inside it. The grounds are placed on top of the filter and the water is poured on top of the grounds. After steeping the filter plunger is used to separate the grounds from the coffee.",
         step1: "1. Boil water and allow to cool to around 200F", 
         step2: "2. Add course ground coffee to empty french press", 
         step3: "3. Cover grounds with the hot water and let sit for 20 seconds", 
@@ -64,7 +64,7 @@ export default function Brew() {
         methodName: "Cold Brew",
         methodType: "Method: Steep",
         equipment: "Equipment: Large Container, Fridge",
-        description: "This is another easy brew method that requires little time and effort to produce a great tasting cup of coffee. Essentially put the coffee and water in the fridge and pour your coffee the next morning.",
+        description: "This is another easy brew method that requires little time and effort to produce a great tasting cup of coffee. Essentially, put the coffee and water in the fridge and pour your coffee the next morning.",
         step1: "1. Combine course ground coffee with desired amount of water inside container", 
         step2: "2. Place container in fridge", 
         step3: "3. Let steep overnight", 
@@ -104,7 +104,7 @@ export default function Brew() {
         <div className="brew">
           {methods.map((example, i) => (
             <Card key={example.methodName} className="methodCard">
-              <Card.Body>
+              <Card.Body className='cardBody'>
                 <Col>
                   <Card.Text className="description">
                   <img

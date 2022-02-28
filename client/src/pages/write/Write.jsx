@@ -45,22 +45,21 @@ const Write = (props) => {
         title: "",
         desc: "",
         photo: "",
+        username: Auth.getProfile().data.username,
       });
 
-      // console.log(data, "this is data consolelog")
-      Auth.loggedIn(data.loggedIn.token);
+      // Auth.loggedIn(data.loggedIn.token);
 
-      // auth?
     } catch (e) {
-      console.error(e, "Not logged in");
+      console.error(e);
       window.alert("Please Log In To Publish a Post");
     }
   };
 
   return (
-    <div className="write">
+    <div className="write ">
       {/* add coffee select images */}
-      <label for="coffee-images">Choose an image:</label>
+      <label className="dropdown-menu" for="coffee-images">Choose an image:</label>
 
       <select onChange={handleDropdownChange} name="coffee-images" id="coffee">
         <option value="../Assets/coffee-images">Coffee Cup</option>
@@ -80,6 +79,8 @@ const Write = (props) => {
             style={{ display: "none" }}
             onChange={handleChange}
             name="photo"
+            className='m-3 p-4 card-header bg-secondary text-light p-2 m-0'
+            
           />
           <input
             type="text"
@@ -89,9 +90,10 @@ const Write = (props) => {
             onChange={handleChange}
             name="title"
             value={formState.title}
+            
           />
         </div>
-        <div className="writeFormGroup">
+        <div className="writeFormGroup ">
           <textarea
             placeholder="Tell your story..."
             type="text"
@@ -99,6 +101,7 @@ const Write = (props) => {
             onChange={handleChange}
             name="desc"
             value={formState.desc}
+            
           ></textarea>
           <button
             className="writeSubmit"
