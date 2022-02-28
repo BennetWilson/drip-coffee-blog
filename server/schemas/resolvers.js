@@ -76,7 +76,7 @@ const resolvers = {
       throw new AuthenticationError("Incorrect credentials");
     },
 
-    // TODO check addComment and make sure its correct and relating to typeDefs
+ 
     addComment: async (parent, { postId, commentText }, context) => {
       if (context.user) {
         return Post.findOneAndUpdate(
@@ -95,7 +95,7 @@ const resolvers = {
       throw new AuthenticationError("You need to be logged in!");
     },
 
-    // TODO check removePost and make sure its correct and relating to typeDefs
+    
     removePost: async (parent, { postId }, context) => {
       if (context.user) {
         const post = await Post.findOneAndDelete({
@@ -112,7 +112,29 @@ const resolvers = {
       }
       throw new AuthenticationError("You need to be logged in!");
     },
+
+    // TODO check removePost and make sure its correct and relating to typeDefs
+    updatePost: async (parent, { postId }, context) => {
+      if (context.user) {
+      const post = await Post.findOneAndUpdate({
+       _id: postId,
+        username: context.user.username,
+        });
+
+        await User.findOneAndUpdate(
+        { _id: context.user._id },
+        { $push: { posts: post._id } }
+        );
+
+        return post;
+      }
+      throw new AuthenticationError("You need to be logged in!");
+    },
   },
-};
+}
+
+
+
+
 
 module.exports = resolvers;
