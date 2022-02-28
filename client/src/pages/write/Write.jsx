@@ -56,6 +56,15 @@ const Write = (props) => {
   return (
     <div className="write">
       {/* add coffee select images */}
+      <label for="coffee-images">Choose an image:</label>
+
+<select onChange={handleDropdownChange} 
+name="coffee-images" id="coffee">
+  <option value="../Assets/coffee-images">Coffee Cup</option>
+  <option value="saab">Coffee Beans</option>
+  <option value="mercedes">Coffee maker</option>
+  <option value="audi">Audi</option>
+</select>
       <img className="writeImg" src={`../../${imageSrc}`} alt="" />
       <form className="writeForm" onSubmit={handleFormSubmit}>
         <div className="writeFormGroup">

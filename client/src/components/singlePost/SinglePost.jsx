@@ -33,7 +33,7 @@ export default function SinglePost () {
         <div className='singlePost'>
             <div className="singlePostWrapper">
                 {/* post.photo needs ../ backticks like line 59 write.jsx */}
-                <img src={post.photo} alt="" className="singlePostImg" />
+                <img src={`../${post.photo}`} alt="" className="singlePostImg" />
                 <h1 className="singlePostTitle">{post.title}
                 <div className="singlePostEdit">
                     <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
