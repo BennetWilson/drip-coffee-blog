@@ -6,7 +6,7 @@ import Contact from "./pages/contact/Contact";
 import Settings from "./pages/settings/Settings";
 import Login from "./pages/login/Login";
 import Home from "./pages/home/Home";
-import Brew from "./pages/brew/Brew";
+import Brew from "./pages/brew/Brew.jsx";
 import Recipe from "./pages/recipe/Recipe";
 import Register from "./pages/register/Register";
 import { BrowserRouter as Router, Route } from "react-router-dom";

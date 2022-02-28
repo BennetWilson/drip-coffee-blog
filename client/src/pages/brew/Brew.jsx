@@ -11,8 +11,8 @@ export default function Brew() {
     {
       image: "coffee-cup",
       methodName: "Cowboy Coffee",
-      methodType: "Boil",
-      equipment: "pot, open flame",
+      methodType: "Method: Boil",
+      equipment: "Equipment: pot, open flame",
       description:
         "Unlike the name suggests, the cowboy coffee brew-method is used all over the world. It is one of the easiest methods as it doesn't require any special equipment outside of what most people already have in their kitchen. This method invovles boiling water, adding coffee grounds to the hot water, and pouring it into your mug of choice.",
       steps:
@@ -30,7 +30,7 @@ export default function Brew() {
       <div className="">
         <div className="brew">
           {methods.map((example, i) => (
-            <Card key={example.methodName} className="WorkCard">
+            <Card key={example.methodName} className="methodCard">
               <Col className="img-col">
                 <img
                   src={require(`../../Assets/coffee-images/${example.image}.png`)}
@@ -41,13 +41,16 @@ export default function Brew() {
               <Card.Body>
                 <Col>
                   <Card.Text className="description">
-                    {example.methodType}
+                    <div className="methodName">{example.methodName}</div>
                     <br></br>
-                    {example.equipment}
+                   <div className="methodType">{example.methodType}</div> 
                     <br></br>
-                    {example.description}
+                    <div className="methodType">{example.equipment}</div>
                     <br></br>
-                    {example.steps}
+                    <div className="methodDesc">{example.description}</div>
+                    <br></br>
+                    <div className="methodSteps">{example.steps}</div>
+                    
                     <br></br>
                     {example.pros}
                     {example.cons}
