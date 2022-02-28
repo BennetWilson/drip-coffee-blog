@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./brew.css";
-import { Card, Button, Col, Row } from "react-bootstrap";
+import { Card, Col } from "react-bootstrap";
 
 import Header from "../../components/header/Header";
 import SideBar from "../../components/sidebar/Sidebar";
-import DripCover from "../../Assets/Drip-Cover.jpeg";
+
 
 export default function Brew() {
   const [methods] = useState([
@@ -12,7 +12,6 @@ export default function Brew() {
       image: "cowboy-coffee",
       methodName: "Cowboy Coffee",
       methodType: "Method: Boil",
-
       equipment: "Equipment: Metal Pot, Open Flame",
       description: "Unlike the name suggests, the cowboy coffee brew-method is used all over the world. It is one of the easiest methods as it doesn't require any special equipment outside of what most people already have in their kitchen. This method invovles boiling water, adding coffee grounds to the hot water, and pouring it into your mug of choice.",
       step1: "1. Boil the desired amount of water in the pot",
@@ -23,17 +22,6 @@ export default function Brew() {
       step6: "6. Pour into cup (if you're worried about grounds pour slowly)",
       pros: "Pros- cost effective, relatively easy, full flavor,full bodied",
       cons: "Cons - coffee grounds in cup, difficult to keep water temp consistent",
-      results: "Results - simple and full bodied cup of joe",
-
-      equipment: "Equipment: pot, open flame",
-      description:
-        "Unlike the name suggests, the cowboy coffee brew-method is used all over the world. It is one of the easiest methods as it doesn't require any special equipment outside of what most people already have in their kitchen. This method invovles boiling water, adding coffee grounds to the hot water, and pouring it into your mug of choice.",
-      steps:
-        "1. Boil the desired amount of water in the pot 2. When water reaches a boil take off heat for about 30 seconds or until the water reaches 200F 3. Add ~2 tbsps of ground coffee per 8 ounces of water and stir 4. Let stand for 2 mins and stir again 5. Let stand for another 2 mins then pour 1/2 cup of cold water onto floating grounds to help them sink 6. Pour into cup (if you're worried about grounds pour slowly)",
-      pros: "pros- cost effective, relatively easy, full flavor,full bodied",
-      cons: "cons - coffee grounds in cup, difficult to keep water temp consistent",
-      results: "simple and full bodied cup of joe",
-
       recipes1: "",
     },
     {
@@ -51,16 +39,15 @@ export default function Brew() {
         step7: "7. Repeat step 5 two additional times (for a total of 3) back to back but keep the foam from these two additional boils",
         step8: "8. Let grounds settle to the bottom after last boil(add cold water to grounds to accelerate process)",
         step9: "9. Pour into cup and serve",
-        pros: "Pros- frothy texture, full bodied flavor",
-        cons: "Cons - requires equipment, difficult if using the sand method, small quantities unless using a large pot",
-        results: "Results - more complicated than cowboy coffee but because of the fine grind size it is a much more full bodied cup",
+        pros: "Pros - frothy texture, full bodied flavor",
+        cons: "Pros -  requires equipment, difficult if using the sand method, small quantities unless using a large pot",
         recipes1: "",
       },
       {
         image: "french-press",
         methodName: "French Press",
-        methodType: "Steep",
-        equipment: "French Press",
+        methodType: "Method: Steep",
+        equipment: "Equipment: French Press",
         description: "This method uses a large glass cylinder with a metal mesh filter inside it. The grounds are placed on top of the filter and the water is poured on top of the grounds. After steeping the filter plunger is used to seperate the grounds from the coffee.",
         step1: "1. Boil water and allow to cool to around 200F", 
         step2: "2. Add course ground coffee to empty french press", 
@@ -68,15 +55,15 @@ export default function Brew() {
         step4: "4. Pour remaining water into french press",
         step5: "5. Allow to sit for 4-5 minutes",
         step6: "6. Plunge, pour and enjoy",
-        pros: "consistent, full-flavored",
-        cons: "coffee grounds in cup, difficult to keep water temp consistent",
+        pros: "Pros - consistent, full-flavored",
+        cons: "Cons - coffee grounds in cup, difficult to keep water temp consistent",
         recipe1: ""
     },
     {
         image: "cold-brew",
         methodName: "Cold Brew",
-        methodType: "Steep",
-        equipment: "Large Container, Fridge",
+        methodType: "Method: Steep",
+        equipment: "Equipment: Large Container, Fridge",
         description: "This is another easy brew method that requires little time and effort to produce a great tasting cup of coffee. Essentially put the coffee and water in the fridge and pour your coffee the next morning.",
         step1: "1. Combine course ground coffee with desired amount of water inside container", 
         step2: "2. Place container in fridge", 
@@ -90,8 +77,8 @@ export default function Brew() {
     {
         image: "siphon-brewers",
         methodName: "Siphon Brewers",
-        methodType: "Steep",
-        equipment: "Siphon Brewer, Heat Source",
+        methodType: "Method: Steep",
+        equipment: "Equipment: Siphon Brewer, Heat Source",
         description: "This is a little more complicated than some of the other brew methods. It involves using heat to transfer water to another vessel and re-transfer the water through the coffee grounds. The components can be as intricate or simple as the brewer desires and is, in our opinion, the most entertaining way to brew coffee.",
         step1: "1. Make sure your filter is in the correct position in the hopper (top part of siphon)", 
         step2: "2. Add recently boiled water to the bottom bulb of the siphon", 
@@ -127,9 +114,9 @@ export default function Brew() {
                 />
                   <br></br>
                     <div className="methodName">{example.methodName}</div>
-                    <br></br>
+                    {/* <br></br> */}
                    <div className="methodType">{example.methodType}</div> 
-                    <br></br>
+                    {/* <br></br> */}
                     <div className="methodType">{example.equipment}</div>
                     <br></br>
                     <div className="methodDesc">{example.description}</div>
@@ -143,11 +130,14 @@ export default function Brew() {
                     <div className="methodSteps">{example.step7}</div>
                     <div className="methodSteps">{example.step8}</div>
                     <div className="methodSteps">{example.step9}</div>
-                    <br></br>
+                    {/* <br></br> */}
+                    <div className="prosCons">
                     <div className="methodPro">{example.pros}</div>
-                    <div className="prosCons">{example.cons}</div>
+                    <div className="methodPro">{example.cons}</div>
+                    </div>
                     <br></br>
-                    {example.recipes1}
+                    <div className="methodRecipes">{example.recipes1}</div>
+                  
                   </Card.Text>
                 </Col>
               </Card.Body>
