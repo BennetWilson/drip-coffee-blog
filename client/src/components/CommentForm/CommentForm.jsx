@@ -5,6 +5,7 @@ import { useMutation } from "@apollo/client";
 import { ADD_COMMENT } from "../../utils/mutations";
 
 import Auth from "../../utils/auth";
+import 'bootstrap'
 
 const CommentForm = ({ postId }) => {
   const [commentText, setCommentText] = useState("");
@@ -28,7 +29,6 @@ const CommentForm = ({ postId }) => {
       setCommentText("");
     } catch (err) {
       console.error(err);
-      console.log("postId still not working");
     }
   };
 
@@ -42,8 +42,8 @@ const CommentForm = ({ postId }) => {
   };
 
   return (
-    <div>
-      <h4>Want to comment on this?</h4>
+    <div className='card-header bg-secondary text-light p-2 m-0' >
+      <h4 >Want to comment on this?</h4>
 
       {Auth.loggedIn() ? (
         <>
@@ -55,20 +55,20 @@ const CommentForm = ({ postId }) => {
             Character Count: {characterCount}/280
             {error && <span className="ml-2">{error.message}</span>}
           </p>
-          <form className="" onSubmit={handleFormSubmit}>
-            <div className="">
+          <form className="flex-row justify-center justify-space-between-md align-center" onSubmit={handleFormSubmit}>
+            <div className="col-12 col-lg-9 bg-secondary text-light">
               <textarea
                 name="commentText"
                 placeholder="Add your comment..."
                 value={commentText}
-                className=""
+                className="form-input w-100"
                 style={{ lineHeight: "1.5", resize: "vertical" }}
                 onChange={handleChange}
               ></textarea>
             </div>
 
-            <div className="">
-              <button className="" type="submit">
+            <div className="col-12 col-lg-3">
+              <button className="btn btn-light btn-block py-3" type="submit">
                 Add Comment
               </button>
             </div>
