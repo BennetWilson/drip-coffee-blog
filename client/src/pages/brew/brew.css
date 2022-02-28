@@ -1,11 +1,65 @@
+
+
+.brewTitle {
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Fredoka One', cursive;
+    margin-top: 20px;
+}
+
+.methodCard {
+   
+    display: flex !important;
+    /* justify-content: center !important;
+    text-align: center; */
+    width: 600px !important;
+    margin-right: 70px;
+    border: solid; 
+    border-color: #ab7343;
+    border-width: 6px;
+    border-radius: 1%; 
+    box-shadow: 6px 1px 12px 7px #724a26;
+    height: auto;
+    overflow: scroll;
+    height: 1000px;
+    margin-top: 50px;
+   
+
+
 .methodCard {
     display: flex !important;
     justify-content: center !important;
     text-align: center;
+
 }
 
 .brew {
     display: flex !important;
+
+    flex-wrap: wrap;
+    justify-content: center !important;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 100%;
+}
+
+.methodImage {
+    margin-top: 10px;
+    width: 90%;
+    height: 325px;
+    border-radius: 6%;
+}
+
+.methodName {
+    font-size: 50px !important;
+    font-weight: 900;
+    font-family: 'Fredoka One', cursive;
+}
+
+.methodType {
+    font-size: 30px;
+
     justify-content: center !important;
     text-align: center;
     margin-top: 40px;
@@ -22,6 +76,35 @@
 }
 
 .methodDesc {
+
+    font-size: 25px;
+    font-weight: 700;
+    border: solid;
+    border-radius: 3%;
+   
+}
+
+.methodSteps {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.methodPro {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.prosCons {
+    padding-top: 9px;
+    border: solid;
+    border-radius: 3%;
+}
+
+.methodRes{
+    font-size: 25px;
+    font-weight: 700;
+
     font-size: 20px;
     font-weight: 700;
 }
@@ -30,4 +113,5 @@
     font-size: 20px;
     font-weight: 700;
     width: 30%
+
 }
