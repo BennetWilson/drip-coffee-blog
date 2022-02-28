@@ -1,0 +1,33 @@
+.methodCard {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center;
+}
+
+.brew {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.methodName {
+    font-size: 35px !important;
+    font-weight: 900;
+}
+
+.methodType {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.methodDesc {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.methodSteps {
+    font-size: 20px;
+    font-weight: 700;
+    width: 30%
+}
