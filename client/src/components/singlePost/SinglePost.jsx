@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import { QUERY_SINGLE_POST } from '../../utils/queries';
+import { REMOVE_POST } from '../../utils/mutations'
 import { useParams } from 'react-router-dom';
-import {useQuery} from '@apollo/client';
+import {useQuery, useMutation} from '@apollo/client';
 import './singlepost.css';
 import CommentForm from '../CommentForm/CommentForm'
 import CommentList from '../CommentList/CommentList'
@@ -13,12 +14,15 @@ export default function SinglePost () {
     const {loading, data} = useQuery(QUERY_SINGLE_POST, {
         variables: { postId: postId }
     });
-    //  useEffect(() => {
-    //     effect
-    //     return () => {
-    //         cleanup
-    //     };
-    // }, [input]);
+    
+    const {removePost} = useMutation(REMOVE_POST, {
+        variables: { postId: postId }
+    })
+
+    const handleDelete = (event) => {
+        const{ name, value } = event.target;
+
+    }
 
     const post = data?.singlePost || {};
     console.log(post);
@@ -38,8 +42,8 @@ export default function SinglePost () {
                 <img src={`../${post.photo}`} alt="" className="singlePostImg" />
                 <h1 className="singlePostTitle">{post.title}
                 <div className="singlePostEdit">
-                    <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
-                    <i className="singlePostIcon fa-solid fa-trash"></i>
+                    <i className="singlePostIcon fa-solid fa-pen-to-square" ></i>
+                    <i className="singlePostIcon fa-solid fa-trash" onClick={handleDelete}></i>
                     </div>
                 </h1>
                 <div className="singlePostInfo">

@@ -35,8 +35,11 @@
 }
 
 .headerImg {
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1.0) 75%, transparent 100%);
     width: 100%;
     height: 450px;
-    margin-top: 20px;
+    margin-top: 5px;
     object-fit: cover;
+    border-bottom: 2px gray solid;
+    margin-bottom: 2%;
 }
