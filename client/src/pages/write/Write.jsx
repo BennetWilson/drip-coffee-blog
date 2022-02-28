@@ -42,8 +42,14 @@ const Write = (props) => {
         desc: "",
         photo:""
       });
+      // console.log(data, "this is data consolelog")
+      Auth.loggedIn(data.loggedIn.token);
+
+      // auth?
+
     } catch (e) {
-      console.error(e);
+      console.error(e,'Not logged in');
+      window.alert("Please Log In To Publish a Post")
     }
 
     

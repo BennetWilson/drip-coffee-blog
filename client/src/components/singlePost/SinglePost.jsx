@@ -3,13 +3,15 @@ import { QUERY_SINGLE_POST } from '../../utils/queries';
 import { useParams } from 'react-router-dom';
 import {useQuery} from '@apollo/client';
 import './singlepost.css';
+import CommentForm from '../CommentForm/CommentForm'
+import CommentList from '../CommentList/CommentList'
 
 export default function SinglePost () {
     const {postId} = useParams();
     console.log(postId);
     const [cardData, setCardData] = useState({})
     const {loading, data} = useQuery(QUERY_SINGLE_POST, {
-        variables: {postId: postId }
+        variables: { postId: postId }
     });
     //  useEffect(() => {
     //     effect
@@ -46,7 +48,18 @@ export default function SinglePost () {
                 </div>
                 <p className='singlePostDescription'>{post.desc}</p>
             </div>
+
+            <div className="my-5">
+        <CommentList comments={post.comments} />
+      </div>
+      <div className="m-3 p-4" style={{ border: '1px dotted #1a1a1a' }}>
+        <CommentForm thoughtId={post._id} />
+      </div>
+
+
         </div>
+
+      
         </>
             
     )

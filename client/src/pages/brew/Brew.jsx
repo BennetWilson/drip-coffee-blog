@@ -149,8 +149,8 @@ export default function Brew() {
             </Card>
           ))}
         </div>
+        <SideBar />
       </div>
-      <SideBar />
     </>
   );
 }
