@@ -35,6 +35,7 @@ export default function Post() {
                     </span>
                     </a>
                     <hr/>
+                    <span className='singlePostAuthor'>Author: <b>{post.username}</b></span>
                     <span className="postDate">{post.createdAt}</span>
                 </div>
                 <p className="postDesc">{post.desc}

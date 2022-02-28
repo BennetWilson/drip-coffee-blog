@@ -37,20 +37,16 @@ const Write = (props) => {
       const { data } = await write({
         variables: { ...formState },
       });
-      // console.log(data, "this is data consolelog")
-      // Auth.loggedIn(data.loggedIn.token);
-
-      // auth?
-
+      setFormState({
+        title: "",
+        desc: "",
+        photo:""
+      });
     } catch (e) {
       console.error(e);
     }
 
-    setFormState({
-      title: "",
-      desc: "",
-      photo:""
-    });
+    
   };
 
   return (
@@ -79,6 +75,7 @@ name="coffee-images" id="coffee">
             autoFocus={true}
             onChange={handleChange}
             name='title'
+            value={formState.title}
           />
         </div>
         <div className="writeFormGroup">
@@ -88,6 +85,7 @@ name="coffee-images" id="coffee">
             className="writeInput writeText"
             onChange={handleChange}
             name='desc'
+            value={formState.desc}
           ></textarea>
           <button
             className="writeSubmit"
