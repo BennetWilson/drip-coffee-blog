@@ -55,6 +55,7 @@ const Signup = () => {
            <input type="password" className="registerInput" placeholder="Enter your password..." name="password" value={formState.password} onChange={handleChange}/>
 
            <button className="registerButton" style={{ cursor: 'pointer' }} type="submit" >Register</button>
+           
        </form>
        <button className="registerLoginButton">
         <Link className="link" to="/login">Login</Link>
