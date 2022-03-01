@@ -7,7 +7,7 @@ import { useQuery, useMutation } from "@apollo/client";
 import "./singlepost.css";
 import CommentForm from "../CommentForm/CommentForm";
 import CommentList from "../CommentList/CommentList";
-import Image from "../../Assets/coffee-images/latte.jpeg";
+import Auth from "../../utils/auth"
 
 export default function SinglePost() {
   const { postId } = useParams();
@@ -39,7 +39,7 @@ export default function SinglePost() {
 
     try {
       const { data } = await updatePost({
-        variables: { ...updatedPost },
+        variables: { ...updatedPost, commentAuthor: Auth.getProfile().data.username },
       });
 
       console.log(data)

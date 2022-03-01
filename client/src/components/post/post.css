@@ -33,6 +33,7 @@
     margin-top: 15px;
     margin-right: 10px;
     cursor:pointer;
+
 }
 
 .postTitle{
@@ -41,7 +42,8 @@
     font-weight: 700;
     margin-top: 15px;
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: none !important;
+    color: black !important;
 
 }
 
