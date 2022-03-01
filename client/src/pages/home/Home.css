@@ -1,4 +1,19 @@
 .home {
     display: flex;
+    justify-content: center;
+
+    text-align: center;
+    margin-left: 4%;
     
+   
+    
+}
+
+.homePostsContainer {
+width: 100%;
+}
+
+.sideBarContainer {
+    margin-top: 2.5%;
+    width: 30%;
 }
