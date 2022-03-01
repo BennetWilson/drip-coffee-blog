@@ -130,7 +130,7 @@ export default function Brew() {
   return (
     <>
       <Header />
-      <div className="">
+      <div className="brewBackground">
       <h1 className="brewTitle">Brewing Methods</h1>
         <div className="brew">
           {methods.map((example, i) => (
