@@ -1,12 +1,14 @@
 .post{
-    width:385px;
-    margin: 0px 25px 40px 25px;
+    width:500px;
+    height: 300;
+    margin: 75px 25px 40px 25px;
     border-style: solid;
     border-color: #444;
     border-radius: 7px;
     padding: 10px;
     border-width: 5px;
     box-shadow: 6px 1px 12px 7px #444;
+
 }
 
 
