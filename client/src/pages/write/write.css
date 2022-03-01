@@ -4,21 +4,32 @@
 
 .writeImg {
     margin-left: 150px;
-    width: 70vw;
-    height: 250px;
-    border-radius: 10px;
+    width: 50%;
+    height: 700px;
+    border-radius: 5px;
     object-fit: cover;
+    border: 2px black solid;
+    padding: 1px;
+    box-shadow: 5px 5px 15px 5px black;
+    margin-bottom: 5%;
 }
 
 .writeForm {
     position: relative;
-
+    border-style: solid;
+    border-color: #444;
+    border-radius: 7px;
+    padding: 10px;
+    border-width: 5px;
+    box-shadow: 4px 1px 7px 3px #444;
 }
 
 .writeFormGroup {
     margin-left: 150px;
+    margin-right: 150px;
     display: flex;
     align-items: center;
+    border: 1px rgb(224, 220, 220) dotted;
 }
 
 .writeIcon {
@@ -32,6 +43,7 @@
     font-size: 20px;
     color: grey;
     cursor: pointer;
+    
 
 }
 
@@ -64,4 +76,10 @@
     border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
+}
+
+.imageAlign{
+    justify-content: center !important;
+    align-items: center !important;
+   text-align: center !important;
 }
