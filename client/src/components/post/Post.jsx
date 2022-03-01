@@ -3,6 +3,7 @@ import { useQuery } from "@apollo/client";
 import { QUERY_POST } from '../../utils/queries';
 
 import coffeeCherry from '../post/coffee-seeds.jpeg'
+import { PlaceholderButton } from "react-bootstrap";
 
 //QUERY_POST
 
@@ -21,7 +22,7 @@ export default function Post() {
             return (<>
                 <div className="post">
                 <img className="postImg"
-                src={coffeeCherry}
+                src={post.photo}
                 alt=""
                 />
                 <div className="postInfo">

@@ -31,12 +31,15 @@ const Write = (props) => {
       ...formState,
       [name]: value,
     });
+    console.log(value)
+    document.querySelector('.writeImg').setAttribute('src', value)
     setImageSrc(value);
   };
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     console.log(formState);
+     
     try {
       const { data } = await write({
         variables: { ...formState },
@@ -47,6 +50,7 @@ const Write = (props) => {
         photo: "",
         username: Auth.getProfile().data.username,
       });
+      window.location.href='/'
 
       // Auth.loggedIn(data.loggedIn.token);
 
@@ -61,13 +65,13 @@ const Write = (props) => {
       {/* add coffee select images */}
       <label className="dropdown-menu" for="coffee-images">Choose an image:</label>
 
-      <select onChange={handleDropdownChange} name="coffee-images" id="coffee">
-        <option value="../Assets/coffee-images">Coffee Cup</option>
-        <option value="saab">Coffee Beans</option>
-        <option value="mercedes">Coffee maker</option>
-        <option value="audi">Audi</option>
+      <select onChange={handleDropdownChange} name="photo" value={formState.photo} id="coffee">
+        <option value="/Assets/coffee-images/coffee-cup.png">Coffee Cup</option>
+        <option value="/Assets/coffee-images/green-beans.jpeg">Coffee Beans</option>
+        <option value="/Assets/coffee-images/espresso-machine.jpeg">Coffee maker</option>
+        <option value="/Assets/coffee-images/latte.jpeg">Latte</option>
       </select>
-      <img className="writeImg" src={`../../${imageSrc}`} alt="" />
+      <img className="writeImg" src="/Assets/coffee-images/coffee-cup.png" alt="" />
       <form className="writeForm" onSubmit={handleFormSubmit}>
         <div className="writeFormGroup">
           <label htmlFor="fileInput">
