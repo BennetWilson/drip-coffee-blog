@@ -70,7 +70,7 @@ export default function SinglePost() {
           <div className='imageAlign'>
           <img src={post.photo} alt="" className="singlePostImg" />
           </div>
-          <h1 className="singlePostTitle card-header bg-dark text-light p-2 m-0">
+          <h1 className="singlePostTitle card-header bg-secondary text-light p-2 m-0">
             {post.title}
             <div className="singlePostEdit">
               <a href={`/update/${postId}`}>
@@ -85,7 +85,7 @@ export default function SinglePost() {
               ></i>
             </div>
           </h1>
-          <div className="singlePostInfo card-header bg-dark text-light p-2 m-0">
+          <div className="singlePostInfo card-header bg-success text-light p-2 m-0">
             <span className="singlePostAuthor">
               Author: <b>{post.username}</b>
             </span>
