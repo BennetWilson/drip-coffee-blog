@@ -6,6 +6,7 @@ import { useQuery, useMutation } from "@apollo/client";
 import "./singlepost.css";
 import CommentForm from "../CommentForm/CommentForm";
 import CommentList from "../CommentList/CommentList";
+import Image from "../../Assets/coffee-images/latte.jpeg"
 
 export default function SinglePost() {
   const { postId } = useParams();
@@ -35,7 +36,7 @@ export default function SinglePost() {
       <div className="singlePost my-3">
         <div className="singlePostWrapper ">
           {/* post.photo needs ../ backticks like line 59 write.jsx */}
-          <img src={`../${post.photo}`} alt="" className="singlePostImg" />
+          <img src={Image} alt="" className="singlePostImg" />
           <h1 className="singlePostTitle card-header bg-dark text-light p-2 m-0">
             {post.title}
             <div className="singlePostEdit">

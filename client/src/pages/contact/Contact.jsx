@@ -4,7 +4,7 @@ import "./Contact.css";
 
 export default function Contact() {
   return (
-    <div>
+    <div className='contact'>
       <h1 className="contactTitle">CONTACT US</h1>
       <div className="formcontainer">
         <form
@@ -46,7 +46,7 @@ export default function Contact() {
           </div>
           <div className="btnOrion">
             <button
-              className="contactBtn"
+              className="contactBtn btn btn-light btn-block py-3"
               type="submit"
               // class="btn btn-lg btn-dark btn-block"
             >
