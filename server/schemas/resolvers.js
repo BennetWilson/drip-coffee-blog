@@ -114,17 +114,10 @@ const resolvers = {
     },
 
     // TODO check removePost and make sure its correct and relating to typeDefs
-    updatePost: async (parent, { postId }, context) => {
+    updatePost: async (parent, args, context) => {
       if (context.user) {
-      const post = await Post.findOneAndUpdate({
-       _id: postId,
-        username: context.user.username,
-        });
+      const post = await Post.findByIdAndUpdate(args._id, args, {new: true});
 
-        await User.findOneAndUpdate(
-        { _id: context.user._id },
-        { $push: { posts: post._id } }
-        );
 
         return post;
       }

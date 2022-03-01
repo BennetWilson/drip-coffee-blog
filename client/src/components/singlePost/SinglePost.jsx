@@ -1,20 +1,50 @@
 import React, { useState } from "react";
 import { QUERY_SINGLE_POST } from "../../utils/queries";
-import { REMOVE_POST } from "../../utils/mutations";
+
+import { REMOVE_POST, UPDATE_POST } from "../../utils/mutations";
 import { useParams } from "react-router-dom";
 import { useQuery, useMutation } from "@apollo/client";
 import "./singlepost.css";
 import CommentForm from "../CommentForm/CommentForm";
 import CommentList from "../CommentList/CommentList";
-import Image from "../../Assets/coffee-images/latte.jpeg"
+import Image from "../../Assets/coffee-images/latte.jpeg";
 
 export default function SinglePost() {
   const { postId } = useParams();
   console.log(postId);
-  //   const [cardData, setCardData] = useState({});
+  const [updatePost] = useMutation(UPDATE_POST);
+
+  // TODO Correct and Test -Update Post
+  // const [cardData, setCardData] = useState({});
+  const [updatedPost, setUpdatedPost] = useState({
+    _id: "",
+    title: "",
+    desc: "",
+    photo: "",
+  });
+
   const { loading, data } = useQuery(QUERY_SINGLE_POST, {
     variables: { postId: postId },
   });
+
+  // TODO Correct and Test -Update Post
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+
+    setUpdatedPost({ ...updatedPost, [name]: value });
+  };
+
+  const handleUpdate = async (event) => {
+    event.preventDefault();
+
+    try {
+      const { data } = await updatePost({
+        variables: { ...updatedPost },
+      });
+
+      console.log(data)
+    } catch (err) {}
+  };
 
   const [removePost, { error }] = useMutation(REMOVE_POST);
 
@@ -42,7 +72,12 @@ export default function SinglePost() {
           <h1 className="singlePostTitle card-header bg-dark text-light p-2 m-0">
             {post.title}
             <div className="singlePostEdit">
-              <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
+              <a href={`/update/${postId}`}>
+              <i
+                className="singlePostIcon fa-solid fa-pen-to-square"
+             
+              ></i>
+              </a>
               <i
                 className="singlePostIcon fa-solid fa-trash"
                 onClick={handleDelete}
