@@ -50,34 +50,39 @@ export default function UpdatePost() {
 
   return (
     <>
-      <div className="singlePost my-3">
-        <div className="singlePostWrapper ">
-          <img src={Image} alt="" className="singlePostImg" />
-          <h1 className="singlePostTitle card-header bg-dark text-light p-2 m-0">
-            Update your post
+      <div className="updatePost my-3">
+        <div className="updatePostWrapper">
+          <img src={post.photo} alt="" className="singlePostImg" />
+          <h1 className="updatePostTitle card-header bg-secondary text-light p-2 m-0">
+            UPDATE YOUR POST
           </h1>
-          <form onSubmit={handleUpdate}>
-            <div>
+          <form className="updateForm" onSubmit={handleUpdate}>
+            <div className="Sec">
               <label>Title</label>
-              <input
-                type="text"
-                className="title"
-                placeholder={post.title}
-                value={updatedPost.title}
-                onChange={handleInputChange}
-                name="title"
-              />
+              <div>
+                <input
+                  type="text"
+                  className="title"
+                  placeholder={post.title}
+                  value={updatedPost.title}
+                  onChange={handleInputChange}
+                  name="title"
+                />
+              </div>
             </div>
-            <div>
+            <div className="Sec1">
               <label>Content</label>
-              <textarea
-                name="desc"
-                placeholder={post.desc}
-                value={updatedPost.desc}
-                onChange={handleInputChange}
-              ></textarea>
+              <div>
+                <textarea
+                  className="content"
+                  name="desc"
+                  placeholder={post.desc}
+                  value={updatedPost.desc}
+                  onChange={handleInputChange}
+                ></textarea>
+              </div>
+              <button>Update</button>
             </div>
-            <button>Update</button>
           </form>
         </div>
       </div>
