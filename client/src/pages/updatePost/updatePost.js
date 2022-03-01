@@ -16,7 +16,7 @@ export default function UpdatePost() {
     _id: postId,
     title: "",
     desc: "",
-    photo: "",
+    // photo: "",
   });
 
   const { loading, data } = useQuery(QUERY_SINGLE_POST, {
@@ -52,7 +52,9 @@ export default function UpdatePost() {
     <>
       <div className="updatePost my-3">
         <div className="updatePostWrapper">
-          <img src={post.photo} alt="" className="singlePostImg" />
+          <img src={post.photo}  alt="" className="singlePostImg" />
+          {/* { updatedPost.photo ? <img src={updatedPost.photo} alt="" className="singlePostImg" /> 
+            : <img src={post.photo} alt="" className="singlePostImg" />} */}
           <h1 className="updatePostTitle card-header bg-secondary text-light p-2 m-0">
             UPDATE YOUR POST
           </h1>

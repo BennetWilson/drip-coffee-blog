@@ -5,21 +5,18 @@
 }
 
 .updateForm {
-    background-image: url(https://i0.wp.com/cobsinsights.org/wp-content/uploads/2021/07/beverage-cafein-caffeine-34073.jpg?resize=768%2C512&ssl=1);
+    background-image: url(https://www.pointbleudesign.com/wp-content/uploads/2019/09/European-Specialty-Coffee-Market-by-Pointbleu-Design-Blog.jpg);
     background-size: cover !important;
 }
 
 .updatePostTitle {
-  margin-top: 20px;
-}
-
-.Sec {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .Sec1 {
     margin-top: 15px;
     padding-bottom: 200px;
+    
   }
 
 .title {
@@ -37,6 +34,7 @@
 }
 
 label {
-  font-size: 40px;
-  font-weight: 500;
+  font-size: 45px;
+  font-weight: 600;
+  color:antiquewhite;
 }
