@@ -24,7 +24,7 @@ export default function Sidebar() {
           website. *Spits*
         </p>
       </div>
-      <div className="sideBarItem">
+      {/* <div className="sideBarItem">
         <span className="sideBarTitle">CATEGORIES</span>
         <ul className="sideBarList">
           <li className="sideBarListItem">Roasters</li>
@@ -34,7 +34,7 @@ export default function Sidebar() {
           <li className="sideBarListItem">Fair Trade</li>
           <li className="sideBarListItem">Starbucks Bad :(</li>
         </ul>
-      </div>
+      </div> */}
       <div className="sideBarItem">
         <span className="sideBarTitle">FOLLOW US</span>
         <div className="sideBarSocial">
