@@ -1,18 +1,24 @@
 
 .singlePost {
     flex: 9;
+    align-items: center !important;
 }
 
 .singlePostWrapper {
     padding: 20px;
     padding-right: 0;
+    align-items: center !important;
 }
 
 .singlePostImg{
-    width: 100%;
-    height: 300px;
+    width: 60%;
+    height: 780px;
     border-radius: 5px;
     object-fit: cover;
+    border: 2px black solid;
+    padding: 1px;
+    box-shadow: 5px 5px 15px 5px black;
+    margin-bottom: 5%;
 }
 
 .singlePostTitle {
@@ -59,4 +65,9 @@
 }
 .paragraph{
     overflow-wrap: break-word !important;
+}
+.imageAlign{
+    justify-content: center !important;
+    align-items: center !important;
+   text-align: center !important;
 }

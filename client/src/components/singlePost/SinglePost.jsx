@@ -67,8 +67,9 @@ export default function SinglePost() {
     <>
       <div className="singlePost my-3">
         <div className="singlePostWrapper ">
-          {/* post.photo needs ../ backticks like line 59 write.jsx */}
+          <div className='imageAlign'>
           <img src={post.photo} alt="" className="singlePostImg" />
+          </div>
           <h1 className="singlePostTitle card-header bg-dark text-light p-2 m-0">
             {post.title}
             <div className="singlePostEdit">

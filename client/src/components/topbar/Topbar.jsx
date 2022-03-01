@@ -34,11 +34,6 @@ export default function TopBar() {
               BREW
             </a>
           </li>
-          <li className="topListItem">
-            <a className="link" href="/recipe">
-              RECIPES
-            </a>
-          </li>
         </ul>
       </div>
       <div className="topCenter ">

@@ -70,8 +70,16 @@ const Write = (props) => {
         <option value="/Assets/coffee-images/green-beans.jpeg">Coffee Beans</option>
         <option value="/Assets/coffee-images/espresso-machine.jpeg">Coffee maker</option>
         <option value="/Assets/coffee-images/latte.jpeg">Latte</option>
+        <option value="/Assets/coffee-images/stag.jpeg">Stag</option>
+        <option value="/Assets/coffee-images/yellow-coffee-cherries.jpeg">Yellow Cherries</option>
+        <option value="/Assets/coffee-images/pine-trees.jpg">Pine Trees</option>
+        <option value="/Assets/coffee-images/dr-disrespect.jpg">The Doc</option>
+
+
       </select>
-      <img className="writeImg" src="/Assets/coffee-images/coffee-cup.png" alt="" />
+      <div className='imageAlign'>
+      <img className="writeImg" src="/Assets/coffee-images/dr-disrespect.jpg" alt="" />
+      </div>
       <form className="writeForm" onSubmit={handleFormSubmit}>
         <div className="writeFormGroup">
           <label htmlFor="fileInput">
