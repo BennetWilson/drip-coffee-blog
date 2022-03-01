@@ -1,4 +1,4 @@
-## Drip Coffee Blog 
+## Drip Coffee Blog  :coffee:
 We Are Passionate About Coffee!
 
 ## Description 
