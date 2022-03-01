@@ -10,7 +10,7 @@ export default function Contact() {
         <form
           className="contactForm"
           target="_blank"
-          action="https://formsubmit.co/ianmordaunt@gmail.com"
+          action="https://formsubmit.co/ianmordaunt@gmail.com, "
           method="POST"
         >
           <div className="form-group">

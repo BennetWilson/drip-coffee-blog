@@ -3,7 +3,7 @@ import { QUERY_SINGLE_POST } from "../../utils/queries";
 import { UPDATE_POST } from "../../utils/mutations";
 import { useParams } from "react-router-dom";
 import { useQuery, useMutation } from "@apollo/client";
-import "./singlepost.css";
+import "./updatePost.css";
 
 import Image from "../../Assets/coffee-images/latte.jpeg";
 
