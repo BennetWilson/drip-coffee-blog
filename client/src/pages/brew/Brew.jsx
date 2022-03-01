@@ -20,8 +20,8 @@ export default function Brew() {
       step4: "4. Let stand for 2 mins and stir again",
       step5: "5. Let stand for another 2 mins then pour 1/2 cup of cold water onto floating grounds to help them sink",
       step6: "6. Pour into cup (if you're worried about grounds pour slowly)",
-      pros: "Pros- cost effective, relatively easy, full flavor,full bodied",
-      cons: "Cons - coffee grounds in cup, difficult to keep water temp consistent",
+      pros: "cost effective, relatively easy, full flavor,full bodied",
+      cons: "coffee grounds in cup, difficult to keep water temp consistent",
       recipes1: "",
     },
     {
@@ -39,8 +39,8 @@ export default function Brew() {
         step7: "7. Repeat step 5 two additional times (for a total of 3) back to back but keep the foam from these two additional boils",
         step8: "8. Let grounds settle to the bottom after last boil(add cold water to grounds to accelerate process)",
         step9: "9. Pour into cup and serve",
-        pros: "Pros - frothy texture, full bodied flavor",
-        cons: "Pros -  requires equipment, difficult if using the sand method, small quantities unless using a large pot",
+        pros: "frothy texture, full bodied flavor",
+        cons: "requires equipment, difficult if using the sand method, small quantities unless using a large pot",
         recipes1: "",
       },
       {
@@ -124,6 +124,78 @@ export default function Brew() {
         pros: "Pros - durable, portable, can be taken camping, full bodied cup",
         cons: "Cons - learning curve, not time efficient"
     },
+    {
+      image: "chemex",
+      methodName: "Chemex",
+      methodType: "Drip",
+      equipment: "Chemex, Filters, Kettle, Heat Source",
+      description: "The Chemex is one of the better known methods by coffee connoisseurs and has been producing great cups of coffee since 1941. It is an identical process to the pourover, but instead of brewing directly into your cup the coffee is held in the bottom the chemex. This is essentially a way to make pourover coffee but in a larger than single cup quantity.",
+      step1: "1. Use the kettle to boil more water than you are planning on using", 
+      step2: "2. If you are measuring, make sure your divice is on the scale", 
+      step3: "3. Put filter into chemex and put your grounds into the filter (measure if desired)", 
+      step4: "4. Grind your desired amount of coffee for your cup size(usually about 1g of coffee per 17g of water)",
+      step5: "5. Cover the grounds with hot water (around 200F) and let the grounds bloom",
+      step6: "6. After about 30 seconds pour your desired amount of water over the grounds",
+      step7: "7. Allow the coffee to drip into the chemex, pour into your cup and enjoy",
+      pros: "larger than a single cup, looks fantastic, consistent taste",
+      cons: "absolutely giant paper filters, not very portable because it's glass"
+    },
+    {
+      image: "clever-dripper",
+      methodName: "Clever Dripper",
+      methodType: "Drip",
+      equipment: "Clever Dripper, Kettle, Heat Source",
+      description: "This brew method is similar to the pour over with the important difference of being able to stop the flow of coffee out of the bottom of the brewer. This allows the grounds to steep before filtering out resulting in a more full-flavored cup compared to the pourover.",
+      step1: "1. Bring water to a boil", 
+      step2: "2. Place filter in dripper and add grounds", 
+      step3: "3. Pour desired amount of water onto grounds, cover and let steep for 1 minute", 
+      step4: "4. Uncover and stir to mix the grounds then cover again and let sit for 2 1/2 minutes",
+      step5: "5. Stir again",
+      step6: "6. Place dripper over your cup, pour and enjoy",
+      pros: "full-flavored, consistent",
+      cons: "takes a while"
+    },
+    {
+      image: "auto-drip-machine",
+      methodName: "Auto Drip Machines",
+      methodType: "Drip",
+      equipment: "Auto Drip Machine",
+      description: "This is probably the most common brew method. When most people when they think of a coffee maker, this is the image that pops into their head. It is an automatic coffee maker that requires you to put ground coffee and water into it and push the start button. When you come back you have a carafe full of coffee.",
+      step1: "1. Add water to the reservoir and place filter into coffee maker", 
+      step2: "2. Add your desired amount of ground coffee to the filter", 
+      step3: "3. Start the brewing process via the button or switch on the maker", 
+      step4: "4. When the coffee is done brewing you can pour and enjoy",
+      pros: "easy, it's very easy, large quantity, easy",
+      cons: "can get expensive, not much control over brewing process"
+    },
+    {
+      image: "espresso-machine",
+      methodName: "Espresso Machines",
+      methodType: "Pressure",
+      equipment: "Espresso Machine",
+      description: "An espresso machine is similar to the auto drip in that depending on how expensive you go, the whole process can be automated. A staple in making lots of different coffee drinks.",
+      step1: "1. Turn on and preheat espresso machine", 
+      step2: "2. Add your coffee to the portafilter and tamp it down flat", 
+      step3: "3. The next steps vary depending on your machine but next you pull your first shot", 
+      step4: "4. Discard the puck of grounds",
+      pros: "caffeine, caffeine, caffeine, caffeine",
+      cons: "learning curve, expensive"
+    },
+    {
+      image: "aeropress",
+      methodName: "Aeropress",
+      methodType: "Pressure",
+      equipment: "Aeropress, Filters, Kettle, Heat Source",
+      description: "This method is one of the most portable as the aeropress is a small, plastic set of cylinders that fit together. Using the inverted method, the coffee is allowed to steep for a more full-flavored cup. The traditional method of brewing is similar to a pourover, resulting in a more delicate flavor. The main difference between the aeropress and the pourover is, as the name suggests, you press the plunger down to add pressure to the coffee while it's going throught the filter.",
+      step1: "1. Place the plunger about an inch into the cylinder and set down with the filter side up", 
+      step2: "2. Put desired amount of grounds into the reservoir", 
+      step3: "3. Fill to about 1/2 inch from the top and cover with filter and cap", 
+      step4: "4. Let steep for 4 minutes",
+      step5: "5. Place cup upside down on the cap and flip everything right side up together",
+      step6: "6. Press the coffee into the cup taking about 1 minute, stop when you hear a hissing sound",
+      pros: "full-flavored, consistent",
+      cons: "takes a while"
+    },
 
   ]);
 
@@ -163,8 +235,8 @@ export default function Brew() {
                     <div className="methodSteps">{example.step9}</div>
                     {/* <br></br> */}
                     <div className="prosCons">
-                    <div className="methodPro">{example.pros}</div>
-                    <div className="methodPro">{example.cons}</div>
+                    <div className="methodPro">Pros: {example.pros}</div>
+                    <div className="methodPro">Cons: {example.cons}</div>
                     </div>
                     <br></br>
                     <div className="methodRecipes">{example.recipes1}</div>
