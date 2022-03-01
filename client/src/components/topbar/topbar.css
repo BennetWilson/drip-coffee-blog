@@ -60,6 +60,9 @@
   transform: scale(1.1);
   color: #ab7343;
 }
+.topListItem a:hover {
+  color: #ab7343;
+}
 .topSearchIcon {
     font-size: 18;
     color: #444;
