@@ -47,14 +47,14 @@ a {
 }
 
 .postDate {
-  font-family: serif;
+  font-family: sans-serif;
   font-style: italic;
   font-size: 16px;
   color: #999;
   margin-top: 15px;
 }
 .postDesc {
-  font-family: sans-serif;
+  font-family: sans-serif !important;
   font-size: 20px;
   color: #444;
   line-height: 24px;
