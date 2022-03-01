@@ -21,6 +21,8 @@
 
 .registerForm > label{
     margin: 10px 0;
+    color: black;
+    text-align: center;
 
 }
 .registerInput{
@@ -38,12 +40,28 @@
     border:none;
     color:white;
     border-radius: 10px;
+    
     padding: 10px;
 
 }
+.registerButton:hover{
+    color: blue;
+}
 
 .registerLoginButton{
-    position: absolute;
+
+    margin-top: 20px;
+    cursor: pointer;
+    background-color:lightcoral;
+    border:none;
+    color:white;
+    width: 210px;
+    height: 45px;
+    border-radius: 10px;
+    padding: 10px;
+
+
+    /* position: absolute;
     top: 60px;
     right: 20px;
     background-color: lightcoral;
@@ -51,5 +69,5 @@
     border: none;
     padding: 10px;
     color: white;
-    border-radius: 10px;
+    border-radius: 10px; */
 }

@@ -21,6 +21,8 @@
 
 .loginForm > label{
     margin: 10px 0;
+    color:black;
+    text-align: center;
 
 }
 .loginInput{
@@ -41,9 +43,22 @@
     padding: 10px;
 
 }
+.loginButton:hover{
+    color: blue;
+}
 
 .loginRegisterButton{
-    position: absolute;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: teal;
+    border:none;
+    color:white;
+    border-radius: 10px;
+    width: 196px;
+    height: 45px;
+    padding: 10px;
+
+    /* position: absolute;
     top: 60px;
     right: 20px;
     background-color: teal;
@@ -51,5 +66,5 @@
     border: none;
     padding: 10px;
     color: white;
-    border-radius: 10px;
+    border-radius: 10px; */
 }
