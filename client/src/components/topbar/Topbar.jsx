@@ -6,6 +6,8 @@ import Auth from "../../utils/auth";
 export default function TopBar() {
   const user =  Auth.loggedIn();
   return (
+     <div className="container-fluid">
+        
     <div className="top">
       {/* To revert back href how we had it, move the two logos href the top of this. Like where this comment is, change the className href topLeft and then change the className on the home about div href topCenter. topLeft, topCenter, topRight */}
       <div className="topLeft">
@@ -39,7 +41,7 @@ export default function TopBar() {
           </li>
         </ul>
       </div>
-      <div className="topCenter">
+      <div className="topCenter ">
         <a
           target="_blank"
           href="https://www.linkedin.com/in/taylor-garrey-4934b71a8/" >
@@ -86,6 +88,7 @@ export default function TopBar() {
 
         <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
       </div>
+    </div>
     </div>
   );
 }

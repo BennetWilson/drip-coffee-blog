@@ -50,6 +50,7 @@ export default function SinglePost() {
 
   const handleDelete = async (event) => {
     const remove = await removePost({ variables: { postId: postId } });
+    window.location.href='/'
   };
 
   const post = data?.singlePost || {};
@@ -58,6 +59,7 @@ export default function SinglePost() {
   if (loading) {
     return <div>Loading...</div>;
   }
+  
 
   // setCardData(post);
 
@@ -66,7 +68,7 @@ export default function SinglePost() {
       <div className="singlePost my-3">
         <div className="singlePostWrapper ">
           {/* post.photo needs ../ backticks like line 59 write.jsx */}
-          <img src={Image} alt="" className="singlePostImg" />
+          <img src={post.photo} alt="" className="singlePostImg" />
           <h1 className="singlePostTitle card-header bg-dark text-light p-2 m-0">
             {post.title}
             <div className="singlePostEdit">
