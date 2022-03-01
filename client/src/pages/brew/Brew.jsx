@@ -135,7 +135,7 @@ export default function Brew() {
         <div className="brew">
           {methods.map((example, i) => (
             <Card key={example.methodName} className="methodCard">
-              <Card.Body className='cardBody'>
+              <Card.Body className='cardBody '>
                 <Col>
                   <Card.Text className="description">
                   <img
