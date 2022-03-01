@@ -5,7 +5,7 @@
 }
 
 .updateForm {
-    background-image: url(https://www.pointbleudesign.com/wp-content/uploads/2019/09/European-Specialty-Coffee-Market-by-Pointbleu-Design-Blog.jpg);
+    background-image: url("../../../public/Assets/edit-image.jpg");
     background-size: cover !important;
 }
 

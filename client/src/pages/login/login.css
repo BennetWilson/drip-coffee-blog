@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("http://s1.picswalls.com/wallpapers/2014/07/24/coffee-picture_112617772_81.jpg");
+    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../../../public/Assets/login-image.jpg");
     background-size: cover;
 
 
