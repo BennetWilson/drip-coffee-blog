@@ -6,6 +6,7 @@ import Auth from "../../utils/auth";
 export default function TopBar() {
   const user =  Auth.loggedIn();
   return (
+    
      <div className="container-fluid">
         
     <div className="top">
@@ -85,5 +86,6 @@ export default function TopBar() {
       </div>
     </div>
     </div>
+   
   );
 }
