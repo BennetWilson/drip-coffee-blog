@@ -1,0 +1,42 @@
+.updatePostWrapper {
+  padding-top: 60px;
+  align-items: center;
+  text-align: center;
+}
+
+.updateForm {
+    background-image: url(https://i0.wp.com/cobsinsights.org/wp-content/uploads/2021/07/beverage-cafein-caffeine-34073.jpg?resize=768%2C512&ssl=1);
+    background-size: cover !important;
+}
+
+.updatePostTitle {
+  margin-top: 20px;
+}
+
+.Sec {
+  margin-top: 15px;
+}
+
+.Sec1 {
+    margin-top: 15px;
+    padding-bottom: 200px;
+  }
+
+.title {
+  width: 600px;
+  height: 50px;
+  text-align: center;
+}
+
+.content {
+  width: 600px;
+  height: 200px;
+  text-align: center;
+  padding-bottom: 250px;
+ 
+}
+
+label {
+  font-size: 40px;
+  font-weight: 500;
+}
