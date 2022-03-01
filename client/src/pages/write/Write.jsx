@@ -66,7 +66,6 @@ const Write = (props) => {
       <label className="dropdown-menu" for="coffee-images">Choose an image:</label>
 
       <select onChange={handleDropdownChange} name="photo" value={formState.photo} id="coffee">
-        <option value="/Assets/coffee-images/coffee-cup.png">Coffee Cup</option>
         <option value="/Assets/coffee-images/green-beans.jpeg">Coffee Beans</option>
         <option value="/Assets/coffee-images/espresso-machine.jpeg">Coffee maker</option>
         <option value="/Assets/coffee-images/latte.jpeg">Latte</option>
@@ -78,7 +77,7 @@ const Write = (props) => {
 
       </select>
       <div className='imageAlign'>
-      <img className="writeImg" src="/Assets/coffee-images/dr-disrespect.jpg" alt="" />
+      <img className="writeImg" src="/Assets/coffee-images/green-beans.jpeg" alt="" />
       </div>
       <form className="writeForm" onSubmit={handleFormSubmit}>
         <div className="writeFormGroup">

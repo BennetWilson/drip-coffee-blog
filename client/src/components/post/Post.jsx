@@ -21,10 +21,12 @@ export default function Post() {
 
             return (<>
                 <div className="post">
+                    <a href={`/post/${post._id}`}>
                 <img className="postImg"
                 src={post.photo}
                 alt=""
                 />
+                </a>
                 <div className="postInfo">
                     <div className="postCats">
                        {/* <span className="postCat">Music</span> 
