@@ -74,7 +74,9 @@ const Write = (props) => {
         <option value="/Assets/coffee-images/pine-trees.jpg">Pine Trees</option>
         <option value="/Assets/coffee-images/dr-disrespect.jpg">The Doc</option>
         <option value="/Assets/coffee-images/roasted-coffee.jpg">Roasted Coffee</option>
-        <option value="/Assets/coffee-images/coffee-plantation.jpeg">Coffee Plantation</option>
+        <option value="/Assets/coffee-images/coffee-plantation.jpeg">Coffee Plantations</option>
+        <option value="/Assets/coffee-images/coffee-shop.jpeg">Coffee Shops</option>
+
 
 
       </select>
