@@ -10,6 +10,7 @@ import Brew from "./pages/brew/Brew.jsx";
 import Recipe from "./pages/recipe/Recipe";
 import Register from "./pages/register/Register";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import UpdatePost from "./pages/updatePost/updatePost";
 import {
   ApolloClient,
   InMemoryCache,
@@ -72,6 +73,9 @@ function App() {
         </Route>
         <Route path="/post/:postId">
         <Single />
+        </Route>
+        <Route path="/update/:postId">
+        <UpdatePost />
         </Route>
       </Router>
     </ApolloProvider>

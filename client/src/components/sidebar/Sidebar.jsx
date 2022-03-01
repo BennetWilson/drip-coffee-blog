@@ -19,7 +19,7 @@ export default function Sidebar() {
           drinks, but we're not some people. Violence, Speed, Momentum. Those
           are the virtues of a successful life and of one filled with winning.
           If you want to be a part of the Champions Club of coffee, subscribe to
-          DRIP. Dorn the black on black on slate black blazer and make coffee
+          DRIP. Put on the black on black on slate black blazer and make coffee
           your entire existence. Too hard core for you? Good. Get out of my
           website. *Spits*
         </p>
