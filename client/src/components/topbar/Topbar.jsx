@@ -57,7 +57,7 @@ export default function TopBar() {
           <>
             <img
               className="topImg"
-              src="https://via.placeholder.com/250"
+              src="/Assets/coffee-images/dr-disrespect.jpg"
               alt="placeholder"
             />
             <ul className="topList">
