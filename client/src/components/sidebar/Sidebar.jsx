@@ -14,15 +14,7 @@ export default function Sidebar() {
         />
         <p className="sideBarP">
           We're just four guys. We like coffee. We like coffee more than the
-          normal person. We watch the barista world cup and make those drinks
-          for fun at 4am every morning. We go to work already smelling like
-          roasted coffee beans and hot milk. Some people put love into their
-          drinks, but we're not some people. Violence, Speed, Momentum. Those
-          are the virtues of a successful life and of one filled with winning.
-          If you want to be a part of the Champions Club of coffee, subscribe to
-          DRIP. Put on the black on black on slate black blazer and make coffee
-          your entire existence. Too hard core for you? Good. Get out of my
-          website. *Spits*
+          normal person. We created this website to showcase to you the world of coffee !
         </p>
       </div>
       {/* <div className="sideBarItem">
