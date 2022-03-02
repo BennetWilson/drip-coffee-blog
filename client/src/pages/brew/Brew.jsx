@@ -324,7 +324,8 @@ export default function Brew() {
         </div>
         <div className="sideBarBrew">
         <SideBar />
-        </div>
+       </div>
+      </div>
       </div>
     </>
   );
