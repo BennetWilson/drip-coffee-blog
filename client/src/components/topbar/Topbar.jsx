@@ -38,6 +38,10 @@ export default function TopBar() {
         </ul>
       </div>
       <div className="topCenter ">
+      <a target="_blank" href="/nightcity">
+          {" "}
+          <i className="topIcon fa-solid fa-period egg">.</i>{" "}
+        </a>
         <a
           target="_blank"
           href="https://www.linkedin.com/in/taylor-garrey-4934b71a8/" >
@@ -48,6 +52,7 @@ export default function TopBar() {
           {" "}
           <i className="topIcon fa-brands fa-github-square"></i>{" "}
         </a>
+       
       </div>
       <div className="topRight">
         {user ? (

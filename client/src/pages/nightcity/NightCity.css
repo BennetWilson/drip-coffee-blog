@@ -1,0 +1,138 @@
+:root {
+  --pink: #db3eb1;
+  --blue: #4d4dff;
+  --yellow: #f2ff3e;
+  --orange: #ffad00;
+  --red: #f13841;
+  --green: #43ec43;
+  --purple: rgb(98, 0, 255);
+  --aqua: rgb(0, 255, 255);
+}
+
+.nightCityPage {
+  height: calc(100vh - 50px);
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  background: url("../../../public/Assets/synth.jpg");
+  background-size: cover;
+}
+.doc {
+  border: 2px solid var(--pink) !important;
+  background-color: black !important;
+  color: var(--aqua);
+  line-height: 2;
+  width: 25% !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+.docTitleLg {
+  font-weight: 800 !important;
+  color: var(--aqua);
+  background-color: black;
+  font-size: 30px !important;
+}
+.docTitleSm {
+  font-weight: 800 !important;
+  color: var(--aqua);
+  background-color: black;
+  font-size: 20px !important;
+  color: var(--red);
+  font-style: italic;
+}
+
+.docButton {
+  background-color: rgb(8, 8, 8) !important;
+  color: var(--red) !important;
+  border: var(--pink) 1px solid !important;
+  font-weight: 500 !important;
+  align-self: center !important;
+  transition: all 0.2s ease !important;
+}
+.docButton:hover {
+  background-color: var(--aqua) !important;
+  color: var(--pink) !important;
+  transform: scale(1.2) perspective(1px) !important;
+}
+.docFlex {
+  flex:9 !important;
+  /* width: 49% !important;
+  bottom: 0 !important; */
+}
+.docImage {
+  height: 100%;
+  width: 100%;
+}
+
+/* This is the Miami Nights section. Should really change the classNames but I don't want to */
+.musicFlex {
+  flex: 3 !important;
+}
+
+.music {
+  border: 2px solid var(--purple) !important;
+  background-color: black !important;
+  color: var(--aqua);
+  line-height: 2;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.mixTitleLg {
+  font-weight: 800 !important;
+  color: var(--aqua);
+  background-color: black;
+  font-size: 30px !important;
+}
+.mixTitleSm {
+  font-weight: 800 !important;
+  color: var(--aqau);
+  background-color: black;
+  font-size: 20px !important;
+}
+.musicButton {
+  background-color: rgb(8, 8, 8) !important;
+  color: var(--yellow) !important;
+  border: var(--purple) 1px solid !important;
+  font-weight: 500 !important;
+  align-self: center !important;
+  transition: all 0.2s ease !important;
+}
+.musicButton:hover {
+  background-color: var(--blue) !important;
+  color: var(--green) !important;
+  transform: scale(1.2) perspective(1px) !important;
+}
+
+.musicImage {
+  height: 185px;
+}
+
+/* This is the top section. */
+
+.musicList {
+  position: absolute;
+  top: 10% !important;
+  /* border: 2px solid var(--purple) !important; */
+  background-color: black !important;
+  color: var(--aqua);
+  line-height: 2;
+  margin: 50px !important;
+  /* align-items: center !important;
+    text-align: center !important; */
+}
+.cardList {
+  background-color: black !important;
+  border: 1px solid var(--orange) !important;
+  align-items: center !important;
+  text-align: center !important;
+  justify-content: center !important;
+  height: 300px;
+  width: 500px;
+}
+
+.cardImage {
+  width: 75% !important;
+  height: 50% !important;
+}

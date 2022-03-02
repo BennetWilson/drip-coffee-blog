@@ -9,6 +9,7 @@ import Home from "./pages/home/Home";
 import Brew from "./pages/brew/Brew.jsx";
 import Recipe from "./pages/recipe/Recipe";
 import Register from "./pages/register/Register";
+import NightCity from "./pages/nightcity/NightCity";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import UpdatePost from "./pages/updatePost/updatePost";
 import {
@@ -76,6 +77,9 @@ function App() {
         </Route>
         <Route path="/update/:postId">
         <UpdatePost />
+        </Route>
+        <Route path="/nightcity"  >
+        <NightCity />
         </Route>
       </Router>
     </ApolloProvider>
