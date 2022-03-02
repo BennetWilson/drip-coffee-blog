@@ -82,21 +82,21 @@
     }
   }
   
-  @media (min-width:768px) {
+  @media (max-width:768px) {
     .singlePostImg {
         max-width: 200px;
         max-height: 200px;
     }
   }
   
-  @media (min-width:1000px) {
+  @media (max-width:1000px) {
     .singlePostImg {
         max-width: 250px;
         max-height: 250px;
     }
   }
   
-  @media (min-width:1300px) {
+  /* @media (max-width:1300px) {
     .singlePostImg {
         max-width: 320px;
         max-height: 320px;
@@ -108,4 +108,4 @@
         max-width: 350px;
         max-height: 350px;
     }
-  }
+  } */
