@@ -18,6 +18,7 @@ Do you love coffee ? Let me guess the first thing you do in the morning is start
 - Taylor Garrey
 
 ## Usage
+![ezgif com-gif-maker (9)](https://user-images.githubusercontent.com/89158559/156290275-9ba4fdc7-d5e5-4815-911a-6e1fc4163118.gif)
 
 ## Technology Used 
 - Javascript
@@ -34,4 +35,4 @@ Do you love coffee ? Let me guess the first thing you do in the morning is start
 ## Links 
 [Github](https://github.com/BennetWilson/drip-coffee-blog)
 
-[Deployed]()
+[Deployed](https://drip-coffee-blog-mern.herokuapp.com/)

@@ -1,66 +1,69 @@
 .sidebar {
-    flex: 3;
-    margin: 20px;
-    padding-bottom: 30px;
-    background-color: #fdfbfb;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex: 3;
+  margin: 20px;
+  padding-bottom: 30px;
+  background-color: #fdfbfb;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #444;
+  box-shadow: 6px 1px 12px 7px #444;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .sideBarItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.sideBarTitle{
-    margin: 10px;
-    padding: 5px;
-    width: 350px;
-    border-top: 1px solid #a7a4a4;
-    border-bottom: 1px solid #a7a4a4;
-    font-family: sans-serif;
-    font-size: 12px;
-    color: #222;
-    font-weight: 600;
-    line-height: 20px;
-    text-align: center;
+.sideBarTitle {
+  margin: 10px;
+  padding: 5px;
+  width: 350px;
+  border-top: 1px solid #a7a4a4;
+  border-bottom: 1px solid #a7a4a4;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #222;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
 }
 
 .sideBarImage {
-    margin-top: 15px;
-    width: 370px;
-    height:250px
-
+  margin-top: 15px;
+  width: 370px;
+  height: 250px;
 }
 
- .sideBarP {
-    padding: 30px;
+.sideBarP {
+  padding: 30px;
 }
 
 .sideBarList {
-    list-style: none;
-    margin-bottom: 30px;
+  list-style: none;
+  margin-bottom: 30px;
 }
 
 .sideBarListItem {
-    display: inline-block;
-    width: 50%;
-    margin-top: 15px;
-    cursor: pointer;
+  display: inline-block;
+  width: 50%;
+  margin-top: 15px;
+  cursor: pointer;
 }
 
 .sideBarSocial {
-    margin-top: 15px;
-    width: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin-top: 15px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sideBarIcon {
-    font-size: 16px;
-    margin-left: 10px;
-    cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
 }
