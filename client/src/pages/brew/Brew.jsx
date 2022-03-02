@@ -265,8 +265,10 @@ export default function Brew() {
                     <Col>
                       <div className="methodName">{example.methodName}</div>
                       <div className="prosCons">
-                        <div className="methodPro">Pros: {example.pros}</div>
-                        <div className="methodPro">Cons: {example.cons}</div>
+                      <h5 className="pcTitle">Pros:</h5>
+                        <div className="methodPro">{example.pros}</div>
+                        <h5 className="pcTitle">Cons:</h5>
+                        <div className="methodPro">{example.cons}</div>
                       </div>
                     </Col>
                     <Row>

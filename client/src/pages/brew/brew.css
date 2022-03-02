@@ -1,7 +1,7 @@
 h5{
     font-family: 'Fredoka One', cursive;
     text-align: center;
-    font-size: 30px !important;
+    font-size: 32px !important;
 }
 
 .brewBackground {
@@ -52,9 +52,13 @@ h5{
 }
 
 .methodImage {
-       width: 430px;
-    height: 400px;
+    width: 550px;
+    height: 420px;
     border-radius: 6%;
+}
+
+.pcTitle {
+    padding-right: 10px;
 }
 
 .methodName {
@@ -64,6 +68,10 @@ h5{
     width: 100%;
     text-align: center;
     margin-bottom: 6px;
+}
+
+.methodPro {
+    padding-right: 30px;
 }
 
 .methodType {
@@ -110,7 +118,8 @@ h5{
     border-radius: 3%;
     margin-bottom: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+   
 }
 
 .methodRes{
@@ -121,6 +130,15 @@ h5{
 }
 .steps{
     padding-top: 15px;
+   
+    padding-left: 35px !important;
+}
+
+.description {
+    padding-right: 20px !important;
+    border-right: solid;
+
+    
 }
 
 .methodSteps {
