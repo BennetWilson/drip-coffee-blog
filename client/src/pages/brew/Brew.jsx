@@ -326,10 +326,7 @@ export default function Brew() {
         <SideBar />
        </div>
       </div>
-<<<<<<< Updated upstream
-      
-=======
->>>>>>> Stashed changes
+
     </>
   );
 }
