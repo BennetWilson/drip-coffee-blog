@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Second in the world",
+    "desc": "Coffee is consumed in such great quantities, it is the world's 2nd largest traded commodity, surpassed only by crude oil. It is our most beloved beverage after water. It's worth well over $100 billion worldwide.",
+    "photo": "/Assets/coffee-images/green-beans.jpeg",
+    "username": "scooter",
+    "comments": [
+      {
+        "commentText": "Second in the world? Yeah? Well I'm first in the world.",
+        "commentAuthor": "doc"
+      }
+    ]
+  },
+  {
+    "title": "Hawaii is the only American state that grows coffee",
+    "desc": "Good coffee growing conditions are dependent on variables such as high altitudes, tropical climates and rich soil. Therefore, despite all the rich and diverse landscapes of the Continental United States, Hawaii is the only state suitable for growing coffee plants. It has been producing coffee even before it was a state. (Recently, though, farms in California did start growing coffee bushes!)",
+    "photo": "/Assets/coffee-images/espresso-machine.jpeg",
+    "username": "doc",
+    "comments": [
+      {
+        "commentText": "Wow! I liked Hawaii even before I knew this! Now it is definitely my favorite state!",
+        "commentAuthor": "phil"
+      }
+    ]
+  },
+  {
+    "title": "Coffee was discovered by a goat herder",
+    "desc": "It was said that coffee was discovered by a goat herder in Ethiopia in the 1500s. He saw his goats eating coffee cherries. Afterwards, he observed a change in their behavior; they gained a high amount of energy and they didn't sleep at night.  The herder shared his findings with local monks. After they made their own drink from coffee beans, they realized they could stay up all night and pray. Word spread to other Ethiopian monks and soon after reached all across the civilized world.",
+    "photo": "/Assets/coffee-images/latte.jpeg",
+    "username": "phil",
+    "comments": [
+      {
+        "commentText": "I'm very happy that those goats found coffee! Now I can too stay up all night.",
+        "commentAuthor": "vinny"
+      }
+    ]
+  },
+  {
+    "title": "Coffee helped Olympic athletes",
+    "desc": "Brazil couldn't afford to send its athletes to Los Angeles for the 1932 Olympics, so the government sent them in a ship full of coffee which was sold on the way to finance their trip.",
+    "photo": "/Assets/coffee-images/stag.jpeg",
+    "username": "vinny",
+    "comments": [
+      {
+        "commentText": "What a cool story. I knew coffee was good for more than late night work sessions!",
+        "commentAuthor": "scooter"
+      }
+    ]
+  },
+  {
+    "title": "Add cream, keep your coffee warm",
+    "desc": "Coffee stays warm 20% longer when you add cream. You'll have to ask a physicist about that one. We reckon it might have something to do with the principle that makes hot water more suitable for making ice cubes than cold water when you're in a hurry to cool down your fresh beverage.",
+    "photo": "/Assets/coffee-images/yellow-coffee-cherries.jpeg",
+    "username": "scooter",
+    "comments": [
+      {
+        "commentText": "I wonder if it has the same effect on iced-coffee. I'd love to know! ",
+        "commentAuthor": "doc"
+      }
+    ]
+  },
+  {
+    "title": "Coffee is a fruit",
+    "desc": "Coffee beans grow on a bush. They are actually the pit of a berry, which makes them a fruit. There are two main varieties of beans: green and red. Red beans have a nicer smell and are less acidic. They are used to produce lighter coffees. The longer that coffee beans have been roasted, the healthier they are. Decaffeinated coffee comes from a chemical process where the caffeine is taken out of the beans. The caffeine is then often sold to Coca-Cola, a major buyer.",
+    "photo": "/Assets/coffee-images/pine-trees.jpg",
+    "username": "doc",
+    "comments": [
+      {
+        "commentText": "I thought coffee beans grew on trees. Boy was I wrong!",
+        "commentAuthor": "phil"
+      }
+    ]
+  },
+  {
+    "title": "The most expensive coffee is made from cat poop",
+    "desc": "“Kopi Luwak” is the most expensive coffee in the world. It comes from Indonesia and is made from beans digested from the Asian Palm Civet. In other words, it comes from cat poop.  It sells for €350 and up per kilo!",
+    "photo": "/Assets/coffee-images/roasted-coffee.jpg",
+    "username": "phil",
+    "comments": [
+      {
+        "commentText": "That's disgusting... but I still want to try it!",
+        "commentAuthor": "vinny"
+      }
+    ]
+  },
+  {
+    "title": "A year drinking coffee or an iPhone X?",
+    "desc": "Americans on average spend $1,092 a year on coffee. That's around $20 a week. That is also close to the price of the newest iPhone. Young people generally spend more on coffee than older people.",
+    "photo": "/Assets/coffee-images/coffee-plantation.jpeg",
+    "username": "vinny",
+    "comments": [
+      {
+        "commentText": "I think I could buy a new car every year at the rate I drink coffee...",
+        "commentAuthor": "scooter"
+      }
+    ]
+  },
+  {
+    "title": "Fairtrade coffee improves quality",
+    "desc": "Fairtrade coffee costs more, but it goes a long way in improving conditions for farmers, and they spend at least 25% of that Fairtrade Premium to enhance productivity and quality. Over the last years, Fairtrade-certified coffee products have won lots of Great Taste Awards.",
+    "photo": "/Assets/coffee-images/coffee-shop.jpeg",
+    "username": "doc",
+    "comments": [
+      {
+        "commentText": "Fairtrade is the only trade for me!",
+        "commentAuthor": "phil"
+      }
+    ]
+  }
+]
