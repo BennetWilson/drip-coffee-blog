@@ -329,6 +329,7 @@ export default function Brew() {
           <SideBar />
         </div>
       </div>
+
     </>
   );
 }
