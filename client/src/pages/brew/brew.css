@@ -195,6 +195,12 @@ h5{
 
   @media (max-width:1600px) {
     .methodImage {
+        max-width: 500px;
+        max-height: 500px;
+    }
+  }
+  @media (max-width:2800px) {
+    .methodImage {
         max-width: 350px;
         max-height: 350px;
     }
