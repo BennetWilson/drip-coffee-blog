@@ -1,5 +1,6 @@
 import React from "react";
 import "./sidebar.css";
+import AboutUS from "../../Assets/DripDudes.jpg";
 
 export default function Sidebar() {
   return (
@@ -8,7 +9,7 @@ export default function Sidebar() {
         <span className="sideBarTitle">ABOUT US</span>
         <img
           className="sideBarImage"
-          src="https://www.nme.com/wp-content/uploads/2021/08/dr-disrespect.jpg"
+          src={AboutUS}
           alt=""
         />
         <p className="sideBarP">
