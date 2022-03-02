@@ -322,8 +322,12 @@ export default function Brew() {
             </Card>
           ))}
         </div>
+
         <div className="sideBarBrew">
         <SideBar />
+
+        <div>
+
         </div>
       </div>
     </>
