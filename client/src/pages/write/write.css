@@ -83,3 +83,8 @@
     align-items: center !important;
    text-align: center !important;
 }
+
+.dropdown-menu {
+    align-items: center;
+    text-align: center;
+}

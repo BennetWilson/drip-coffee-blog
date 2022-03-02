@@ -14,10 +14,11 @@ export default function Post() {
    
        const {loading, data} = useQuery(QUERY_POST)
        const posts = data?.posts || []
+
     //  console.log(posts,loading)
     return(
     <>
-        {loading?"still loading" : posts.map(post => {
+        {loading?"still loading" : posts.slice(0).reverse().map(post => {
 
             return (<>
                 <div className="post">
