@@ -34,8 +34,7 @@ export default function Contact() {
                 />
               </div>
             </div>
-          </div>
-          <div className="form-group">
+            <div className="form-group">
             <textarea
               placeholder="Your Message"
               className="form-control"
@@ -44,6 +43,8 @@ export default function Contact() {
               required
             ></textarea>
           </div>
+          </div>
+          
           <div className="btnOrion">
             <button
               className="contactBtn"

@@ -18,6 +18,15 @@
   font-size: 100px;
 }
 
+/* .form-row {
+  width: 75%;
+} */
+
+.contactForm {
+  width: 90%;
+  
+}
+
 .formcontainer {
   border-style: solid;
   border-color: #444;
@@ -32,9 +41,6 @@
   width: 50%;
 }
 
-.form-row {
-  width: 800px !important;
-}
 
 .contactBtn {
   margin-top: 25px;
