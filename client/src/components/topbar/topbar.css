@@ -78,3 +78,9 @@
   margin: auto;
 }
 
+.egg {
+  font-size: 5px;
+  margin-right:5px;
+  color: #444;
+  cursor: pointer;
+}
