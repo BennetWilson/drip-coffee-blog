@@ -42,3 +42,20 @@
   font-weight: 600 !important;
   border-radius: 10px !important;
 }
+
+
+/* 
+@media (max-width:1000px) {
+  form {
+      max-width: 0%;
+      max-height: 0%;
+      display: none;
+  }
+
+}
+
+@media (max-width:1250px) {
+  form {
+    display: flex !important;
+  }
+} */
