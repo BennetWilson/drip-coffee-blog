@@ -28,8 +28,6 @@ export default function TopBar() {
               WRITE
             </a>
           </li>
-        </ul>
-        <ul className="topList brList">
           <li className="topListItem">
             <a className="link" href="/brew">
               BREW
