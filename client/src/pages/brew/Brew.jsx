@@ -261,7 +261,7 @@ export default function Brew() {
                       className="methodImage"
                     />
                   </Col>
-                  <Col xs={9}>
+                  <Col xs={9} className="contextCol">
                     <Col>
                       <div className="methodName">{example.methodName}</div>
                       <div className="prosCons">
@@ -326,7 +326,7 @@ export default function Brew() {
         <SideBar />
        </div>
       </div>
-      </div>
+      
     </>
   );
 }
