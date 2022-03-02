@@ -34,7 +34,7 @@
 
 .sideBarImage {
   margin-top: 15px;
-  width: 370px;
+  width: 340px;
   height: 250px;
 }
 
@@ -77,16 +77,16 @@
 
   }
   
-  @media (min-width:1300px) {
+  /* @media (min-width:1300px) {
     .sidebar {
         max-width: 320px;
         max-height: 320px;
     }
-  }
+  } */
 
-  @media (min-width:1600px) {
+  /* @media (min-width:1600px) {
     .sidebar {
         max-width: 350px;
         max-height: 350px;
     }
-  }
+  } */
