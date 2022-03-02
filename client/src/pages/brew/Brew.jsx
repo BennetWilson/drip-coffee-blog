@@ -322,7 +322,8 @@ export default function Brew() {
             </Card>
           ))}
         </div>
-        <SideBar />
+        <div>
+        </div>
       </div>
     </>
   );
