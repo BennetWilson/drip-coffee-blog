@@ -254,7 +254,10 @@ export default function Brew() {
               <Card.Body className="cardBody ">
                 <Container></Container>
                 <Row>
-                  <Col xs={3} className="d-flex align-items-center justify-content-center">
+                  <Col
+                    xs={3}
+                    className="d-flex align-items-center justify-content-center"
+                  >
                     <img
                       src={require(`../../Assets/brew-methods/${example.image}.png`)}
                       alt="Img of portfolio project"
@@ -265,7 +268,7 @@ export default function Brew() {
                     <Col>
                       <div className="methodName">{example.methodName}</div>
                       <div className="prosCons">
-                      <h5 className="pcTitle">Pros:</h5>
+                        <h5 className="pcTitle">Pros:</h5>
                         <div className="methodPro">{example.pros}</div>
                         <h5 className="pcTitle">Cons:</h5>
                         <div className="methodPro">{example.cons}</div>
@@ -283,12 +286,12 @@ export default function Brew() {
                             </div>
                             {/* <br></br> */}
                             <div className="methodType">
-                            <h5>Equipment</h5>
+                              <h5>Equipment</h5>
                               {example.equipment}
                             </div>
                             {/* <br></br> */}
                             <div className="methodDesc">
-                            <h5>Description</h5>
+                              <h5>Description</h5>
                               {example.description}
                             </div>
                           </Col>
@@ -323,8 +326,8 @@ export default function Brew() {
           ))}
         </div>
         <div className="sideBarBrew">
-        <SideBar />
-       </div>
+          <SideBar />
+        </div>
       </div>
 
     </>
