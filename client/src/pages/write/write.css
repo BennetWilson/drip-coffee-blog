@@ -88,3 +88,19 @@
     align-items: center;
     text-align: center;
 }
+
+@media (max-width:1750px) {
+    .writeImg {
+        max-width: 450px !important;
+        max-height: 450px !important;
+
+    }
+  }
+  
+  @media (max-width:930px) {
+    .writeImg {
+        max-width: 300px !important;
+        max-height: 300px !important;
+
+    }
+  }
