@@ -63,7 +63,36 @@
 }
 
 .sideBarIcon {
+<<<<<<< Updated upstream
   font-size: 16px;
   margin-left: 10px;
   cursor: pointer;
 }
+=======
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media (max-width:1000px) {
+    .sidebar {
+        max-width: 0%;
+        max-height: 0%;
+        display: none;
+    }
+
+  }
+  
+  @media (min-width:1300px) {
+    .sidebar {
+        max-width: 320px;
+        max-height: 320px;
+    }
+  }
+
+  @media (min-width:1600px) {
+    .sidebar {
+        max-width: 350px;
+        max-height: 350px;
+    }
+  }
+>>>>>>> Stashed changes

@@ -70,3 +70,42 @@
     align-items: center !important;
    text-align: center !important;
 }
+
+@media (max-width:767px) {
+    .singlePostImg {
+        max-width: 0%;
+        max-height: 0%;
+        display: none;
+    }
+    .singlePostTitle {
+        margin-top: 50px;
+    }
+  }
+  
+  @media (min-width:768px) {
+    .singlePostImg {
+        max-width: 200px;
+        max-height: 200px;
+    }
+  }
+  
+  @media (min-width:1000px) {
+    .singlePostImg {
+        max-width: 250px;
+        max-height: 250px;
+    }
+  }
+  
+  @media (min-width:1300px) {
+    .singlePostImg {
+        max-width: 320px;
+        max-height: 320px;
+    }
+  }
+
+  @media (min-width:1600px) {
+    .singlePostImg {
+        max-width: 350px;
+        max-height: 350px;
+    }
+  }
