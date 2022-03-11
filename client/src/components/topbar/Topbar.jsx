@@ -36,10 +36,10 @@ export default function TopBar() {
         </ul>
       </div>
       <div className="topCenter ">
-      <a target="_blank" href="/nightcity">
+      {/* <a target="_blank" href="/nightcity">
           {" "}
           <i className="topIcon fa-solid fa-period egg">.</i>{" "}
-        </a>
+        </a> */}
         <a
           target="_blank"
           href="https://www.linkedin.com/in/taylor-garrey-4934b71a8/" >
